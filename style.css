@@ -1,0 +1,4518 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    /* Weight - 400 */
+    font-family: "Roboto Regular";
+    src: url(./static/font/Roboto-Regular.ttf);
+}
+
+@font-face {
+    /* Weight - 700 */
+    font-family: "Roboto Bold";  
+    src: url(./static/font/Roboto-Bold.ttf);
+}
+
+@font-face {
+    /* Weight - 500 */
+    font-family: "Roboto Medium";
+    src: url(./static/font/Roboto-Medium.ttf);
+}
+
+body {
+    box-sizing: border-box;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {}
+
+@media only screen and (min-width : 321px) {}
+
+@media only screen and (max-width : 320px) {}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .device-menu__shell {
+        position: absolute;
+
+        width: 100%;
+        height: 200px;
+
+        top: 60px;
+        left: 0px;
+
+        z-index: 5;
+
+        display: none;
+    }
+    
+    .device-menu {
+        position: relative;
+
+        height: 100%;
+
+        display: flex;
+
+        margin-left: 15px;
+        margin-right: 15px;
+
+        background-color: #393F47;
+    }
+
+    .device-menu ul {
+        position: relative;
+
+        display: block;
+
+        width: 90%;
+
+        list-style-type: none;
+    }
+
+    .device-menu ul li {
+        position: relative;
+
+        width: 95%;
+        height: 30px;
+
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .device-menu ul li:hover {
+        background-color: #C8A35F;
+    }
+
+    .device-menu ul li a {
+        position: relative;
+
+        display: block;
+
+        width: 100%;
+        height: 100%;
+
+        text-decoration: none;
+
+        font-size: 16px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 2;
+
+        color: white;
+    }
+
+    .device-menu__delete-box {
+        position: relative;
+
+        width: 10%;
+        height: 100%;
+    }
+
+    .device-menu__delete {
+        position: relative;
+        
+        width: 46px;
+        height: 46px;
+
+        margin-top: 12px;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .device-menu__delete:hover {
+        cursor: pointer;
+    }
+
+    .delete-line__first {
+        position: relative;
+
+        width: 100%;
+        height: 6px;
+
+        transform: rotate(45deg);
+
+        top: 20px;
+        
+        background-color: white;
+    }
+
+    .delete-line__second {
+        position: relative;
+
+        width: 100%;
+        height: 6px;
+
+        transform: rotate(-45deg);
+
+        top: 20px;
+
+        margin-top: -6px;
+        
+        background-color: white;
+    }
+    
+
+    .header {
+        position: relative;
+    
+        width: 100%;
+        height: 765px;
+    
+    }
+    
+    .header__primary-menu {
+        position: relative;
+    
+        width: 100%;
+        height: 45px;
+    
+        background-color: #C8A35F;
+    }
+
+    .container {
+        position: relative;
+
+        width: 700px;
+        height: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .primary-menu__list-languages {
+        position: relative;
+
+        height: 100%;
+
+        list-style-type: none;
+
+        display: flex;
+    }
+
+    .russian-language {
+        position: relative;
+
+        opacity: 1;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-right: 5px;
+        margin-top: 16px;
+    }
+
+    .english-language {
+        position: relative;
+
+        opacity: .5;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 16px;
+    }
+
+    .french-language {
+        position: relative;
+
+        opacity: .5;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-left: 5px;
+        margin-top: 16px;
+    }
+
+    .button-languages {
+        position: relative;
+
+        background-color: rgba(0, 0, 0, 0);
+
+        border: none;
+
+        color: white;
+    }
+    
+    .primary-menu__phone {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 16px;
+        margin-left: auto;
+        margin-right: auto;
+
+        color: white;
+    }
+
+    .primary-menu__email {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 16px;
+        margin-left: auto;
+
+        color: white;
+    }
+
+    .secondary-menu {
+        position: relative;
+
+        width: 100%;
+        height: 100px;
+
+        background-color: #2F343A;
+
+        margin-top: -1px;
+    }
+
+    .logotip-box {
+        position: relative;
+
+        display: flex;
+
+        height: 46px;
+
+        margin-right: auto;
+        margin-top: 27px;
+    }
+
+    .logotip {
+        position: relative;
+
+        display: block;
+
+        width: 160px;
+
+        margin-right: 30px;
+    }
+
+    .logotip-box__separator {
+        position: relative;
+
+        width: 1px;
+        height: 100%;
+
+        background-color: white;
+    }
+
+    .adress-box {
+        position: relative;
+
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+
+        margin-left: 30px;
+    }
+
+    .location {
+        position: relative;
+
+        width: 25px;
+        height: 25px;
+
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+
+    .adress-box__text {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 14px;
+        margin-left: 5px;
+
+        color: white;
+    }
+
+    .navigation-menu {
+        position: relative;
+
+        height: 100%;
+
+        margin-left: auto;
+        margin-right: 0px;
+
+        display: none;
+    }
+
+    .navigation-menu__list {
+        position: relative;
+
+        display: flex;
+
+        list-style-type: none;
+
+        margin-top: 42px;
+    }
+
+    .list-element {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .list-element:first-child {
+        margin-left: 0px;
+    }
+
+    .list-element:last-child {
+        margin-right: 0px;
+    }
+
+    .list-element a {
+        position: relative;
+
+        text-decoration: none;
+
+        color: white;
+    }
+
+    .device-menu__box {
+        position: relative;
+
+        width: 46px;
+        height: 46px;
+
+        margin-left: auto;
+        margin-right: 0px;
+        margin-top: 27px;
+    }
+
+    .device-menu__box:hover {
+        cursor: pointer;
+    }
+
+    .box-line {
+        position: relative;
+
+        width: 100%;
+        height: 6px;
+
+        margin-top: 7px;
+        margin-bottom: 7px;
+
+        background-color: white;
+    }
+
+    .main-screensaver {
+        position: relative;
+
+        width: 100%;
+        height: 620px;
+
+        background-image: url(./static/picture/header-background.svg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .header-frame {
+        position: relative;
+
+        width: 650px;
+        height: 245px;
+
+        border: 1px solid #C8A35F;
+        box-sizing: border-box;
+
+        margin-left: auto;
+        margin-right: auto;
+        
+        top: 155px;
+    }
+
+    .header-frame h1 {
+        position: relative;
+
+        font-size: 50px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+
+        text-align: center;
+
+        color: white;
+
+        margin-top: 45px;
+    }
+
+    .frame-subtitle {
+        position: relative;
+
+        text-align: center;
+
+        margin-top: 45px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .frame-subtitle h5 {
+        position: relative;
+
+        display: block;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: normal;
+        font-style: normal;
+
+        color: white;
+
+        margin-left: 34px;
+        margin-right: 34px;
+    }
+
+    .mouse-link {
+        position: relative;
+
+        width: 100%;
+
+        top: 285px;
+    }
+
+    .mouse-link button {
+        position: relative;
+
+        display: block;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+    }
+
+    .mouse-link button:hover {
+        cursor: pointer;
+    }
+
+    .section {
+        position: relative;
+
+        width: 100%;
+    }
+
+    .services {
+        position: relative;
+
+        width: 100%;
+        height: 400px;
+
+        background-color: #393F47;
+
+        margin-top: -1px;
+    }
+
+    .services__background-block {
+        position: absolute;
+
+        width: 410px;
+        height: 100%;
+
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+
+        background-color: #2F343A;
+    }
+
+    .services-slider {
+        position: relative;
+
+        width: 100%;
+        height: 312px;
+
+        top: 60px;
+
+        display: flex;
+    }
+
+    .slide {
+        position: relative;
+
+        display: flex;
+
+        width: 83%;
+        height: 100%;
+    }
+
+    .slide__left-part {}
+
+    .strip {
+        position: relative;
+
+        width: 60px;
+        height: 3px;
+
+        background-color: #C8A35F;
+    }
+
+    .slide-title {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 50px;
+    }
+
+    .slide-title h2 {
+        position: relative;
+
+        font-size: 26px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+
+        color: white;
+    }
+
+    .slide-subtitle {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 42px;
+    }
+
+    .slide-subtitle h1 {
+        position: relative;
+
+        font-size: 16px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: white;
+    }
+
+    .slide-button {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 41px;
+    }
+
+    .slide-button button {
+        position: relative;
+
+        width: 100%;
+        height: 55px;
+
+        background-color: #C8A35F;
+
+        border: none;
+
+        font-size: 16px;
+        font-family: "Roboto Medium";
+        font-weight: 500;
+        font-style: normal;
+
+        color: white;
+    }
+
+    .slide__right-part img {
+        position: relative;
+
+        margin-top: 40px;
+        margin-left: -80px;
+    }
+
+    .slider__buttons-box {
+        position: relative;
+
+        width: 20%;
+
+        margin-left: -50px;
+        
+    }
+
+    .button-next {
+        position: relative;
+
+        display: flex;
+
+        width: 100%;
+        height: 24px;
+
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+    }
+
+    .button-next h1 {
+        position: relative;
+
+        font-size: 16px;
+        font-family: "Roboto Medium";
+        font-weight: 500;
+        font-style: normal;
+
+        color: #C8A35F;
+
+        top: 2px;
+    }
+
+    .button-next img {
+        margin-left: auto;
+    }
+
+    .button-back {
+        position: relative;
+
+        display: flex;
+
+        width: 100%;
+        height: 24px;
+
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+
+        margin-top: 262px;
+    }
+
+    .button-back h1 {
+        position: relative;
+
+        font-size: 16px;
+        font-family: "Roboto Medium";
+        font-weight: 500;
+        font-style: normal;
+
+        color: #C8A35F;
+
+        top: 2px;
+    }
+
+    .button-back img {
+        margin-right: auto;
+    }
+
+    .all-services {
+        position: relative;
+
+        width: 100%;
+        height: 684px;
+
+        background-color: #2F343A;
+    }
+
+    .all-services__box {
+        position: relative;
+
+        width: 100%;
+        height: 504px;
+
+        top: 120px;
+    }
+
+    .all-services__title {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 40px;
+    }
+
+    .all-services__title h2 {
+        font-size: 26px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+
+        color: white;
+    }
+
+    .panel-block {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 50px;
+    }
+
+    .panel__top-part {
+        position: relative;
+
+        width: 100%;
+
+        display: flex;
+    }
+
+    .panel__down-part {
+        position: relative;
+
+        width: 100%;
+
+        display: flex;
+
+        margin-top: 1px;
+    }
+
+    .panel {
+        position: relative;
+
+        width: 277px;
+        height: 180px;
+
+        background-color: #393F47;
+
+        margin-left: 1px;
+    }
+
+    .panel:first-child {
+        margin-left: 0px;
+    }
+
+    .panel-icon__box {
+        position: relative;
+
+        width: 50px;
+        height: 50px;
+
+        border-radius: 100px;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+
+    .panel-icon__box img {
+        position: relative;
+
+        display: block;
+
+        width: 20px;
+        height: 20px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        top: 16px;
+    }
+
+    .panel h2 {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+
+        color: white;
+
+        text-align: center;
+
+        margin-top: 30px;
+    }
+
+    .about-company {
+        position: relative;
+
+        width: 100%;
+        height: 500px;
+
+        background-color: #2F343A;
+    }
+
+    .about-company__box {
+        position: relative;
+
+        width: 100%;
+        height: 382px;
+
+        display: flex;
+    }
+
+    .about-company__background-block {
+        position: absolute;
+
+        width: 410px;
+        height: 100%;
+
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+
+        background-color: #393F47;
+    }
+
+    .information__left-part {
+        position: relative;
+
+        width: 40%;
+        height: 100%;
+    }
+
+    .about-strip {
+        position: relative;
+
+        margin-top: 85px;
+    }
+
+    .about-company__title {
+        position: relative;
+
+        margin-top: 20px;
+
+        color: white;
+    }
+
+    .about-company__title h2 {
+        font-size: 26px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+    } 
+
+    .all-services__subtitle {
+        position: relative;
+
+        margin-top: 20px;
+
+        color: white;
+    }
+
+    .all-services__subtitle h6 {
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .information__right-part {
+        position: relative;
+
+        width: 54%;
+        height: 100%;
+
+        margin-left: auto;
+        margin-right: 0px;
+    }
+
+    .data-panel {
+        position: relative;
+
+        width: 100%;
+        height: 320px;
+
+        margin-top: 85px;
+    }
+
+    .data-panel__top-part {
+        position: relative;
+
+        width: 100%;
+
+        display: flex;
+    }
+
+    .offices {
+        position: relative;
+
+        width: 127px;
+        
+
+        background-color: white;
+
+        border: 1px solid #C8A35F;
+        border-right: none;
+
+        margin-top: -1px;
+    }
+
+    .offices h1 {
+        position: relative;
+
+        font-size: 26px;
+        font-family: "Roboto Bold";
+        font-weight: bold;
+        font-style: normal;
+
+        margin-top: 15px;
+
+        text-align: center;
+
+        color: #2F343A;
+    }
+
+    .offices h5 {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 4px;
+
+        text-align: center;
+
+        color: black;
+    }
+
+    .offices h6 {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 4px;
+
+        text-align: center;
+
+        color: black;
+    }
+
+    .trucks {
+        position: relative;
+
+        width: 127px;
+        
+
+        background-color: white;
+
+        border: 1px solid #C8A35F;
+        border-bottom: none;
+
+        margin-top: -1px;
+    }
+
+    .trucks h1 {
+        position: relative;
+
+        font-size: 26px;
+        font-family: "Roboto Bold";
+        font-weight: bold;
+        font-style: normal;
+
+        margin-top: 15px;
+
+        text-align: center;
+
+        color: #2F343A;
+    }
+
+    .trucks h5 {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 4px;
+
+        text-align: center;
+
+        color: black;
+    }
+
+    .trucks h6 {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 4px;
+
+        text-align: center;
+
+        color: black;
+    }
+
+    .picture {
+        position: relative;
+    }
+
+    .picture img {
+        width: 127px;
+
+        margin-top: -1px;
+    }
+
+    .top-picture {
+        position: relative;
+    }
+
+    .down-picture {}
+
+    .data-panel__down-part {
+        position: relative;
+
+        width: 100%;
+
+        display: flex;
+
+        margin-top: 1px;
+    }
+
+    .staff {
+        position: relative;
+
+        width: 123px;
+        height: 98px;
+
+        background-color: white;
+
+        outline: 1px solid #C8A35F;
+    }
+
+    .staff h1 {
+        position: relative;
+
+        font-size: 26px;
+        font-family: "Roboto Bold";
+        font-weight: bold;
+        font-style: normal;
+
+        margin-top: 15px;
+
+        text-align: center;
+
+        color: #2F343A;
+    }
+
+    .staff h5 {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 4px;
+
+        text-align: center;
+
+        color: black;
+    }
+
+    .staff h6 {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 4px;
+
+        text-align: center;
+
+        color: black;
+    }
+
+    #map {
+        height: 250px;
+    }
+
+    .footer {
+        position: relative;
+
+        width: 100%;
+        height: 160px;
+
+        background-color: #C8A35F;
+    }
+
+    .footer-logo {
+        position: relative;
+
+        height: 100%;
+    }
+
+    .footer-logo img {
+        position: relative;
+
+        margin-top: 57px;
+    }
+
+    .footer-address {
+        position: relative;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 54px;
+    }
+
+    .address-building {
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #F2F2F2;
+    }
+
+    .address-email {
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #2F343A;
+
+        margin-top: 10px;
+    }
+
+    .footer-phone {
+        position: relative;
+
+        margin-left: auto;
+        margin-right: 0px;
+        margin-top: 54px;
+    }
+
+    .phone-number__first {
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #F2F2F2;
+    }
+
+    .phone-number__second {
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #F2F2F2;
+
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+    .device-menu__shell {
+        position: absolute;
+
+        width: 100%;
+        height: 200px;
+
+        top: 60px;
+        left: 0px;
+
+        z-index: 5;
+
+        display: none;
+    }
+    
+    .device-menu {
+        position: relative;
+
+        height: 100%;
+
+        display: flex;
+
+        margin-left: 15px;
+        margin-right: 15px;
+
+        background-color: #393F47;
+    }
+
+    .device-menu ul {
+        position: relative;
+
+        display: block;
+
+        width: 90%;
+
+        list-style-type: none;
+    }
+
+    .device-menu ul li {
+        position: relative;
+
+        width: 95%;
+        height: 30px;
+
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .device-menu ul li:hover {
+        background-color: #C8A35F;
+    }
+
+    .device-menu ul li a {
+        position: relative;
+
+        display: block;
+
+        width: 100%;
+        height: 100%;
+
+        text-decoration: none;
+
+        font-size: 16px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 2;
+
+        color: white;
+    }
+
+    .device-menu__delete-box {
+        position: relative;
+
+        width: 10%;
+        height: 100%;
+    }
+
+    .device-menu__delete {
+        position: relative;
+        
+        width: 46px;
+        height: 46px;
+
+        margin-top: 12px;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .device-menu__delete:hover {
+        cursor: pointer;
+    }
+
+    .delete-line__first {
+        position: relative;
+
+        width: 100%;
+        height: 6px;
+
+        transform: rotate(45deg);
+
+        top: 20px;
+        
+        background-color: white;
+    }
+
+    .delete-line__second {
+        position: relative;
+
+        width: 100%;
+        height: 6px;
+
+        transform: rotate(-45deg);
+
+        top: 20px;
+
+        margin-top: -6px;
+        
+        background-color: white;
+    }
+    
+
+    .header {
+        position: relative;
+    
+        width: 100%;
+        height: 765px;
+    
+    }
+    
+    .header__primary-menu {
+        position: relative;
+    
+        width: 100%;
+        height: 45px;
+    
+        background-color: #C8A35F;
+    }
+
+    .container {
+        position: relative;
+
+        width: 700px;
+        height: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .primary-menu__list-languages {
+        position: relative;
+
+        height: 100%;
+
+        list-style-type: none;
+
+        display: flex;
+    }
+
+    .russian-language {
+        position: relative;
+
+        opacity: 1;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-right: 5px;
+        margin-top: 16px;
+    }
+
+    .english-language {
+        position: relative;
+
+        opacity: .5;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 16px;
+    }
+
+    .french-language {
+        position: relative;
+
+        opacity: .5;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-left: 5px;
+        margin-top: 16px;
+    }
+
+    .button-languages {
+        position: relative;
+
+        background-color: rgba(0, 0, 0, 0);
+
+        border: none;
+
+        color: white;
+    }
+    
+    .primary-menu__phone {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 16px;
+        margin-left: auto;
+        margin-right: auto;
+
+        color: white;
+    }
+
+    .primary-menu__email {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 16px;
+        margin-left: auto;
+
+        color: white;
+    }
+
+    .secondary-menu {
+        position: relative;
+
+        width: 100%;
+        height: 100px;
+
+        background-color: #2F343A;
+
+        margin-top: -1px;
+    }
+
+    .logotip-box {
+        position: relative;
+
+        display: flex;
+
+        height: 46px;
+
+        margin-right: auto;
+        margin-top: 27px;
+    }
+
+    .logotip {
+        position: relative;
+
+        display: block;
+
+        width: 160px;
+
+        margin-right: 30px;
+    }
+
+    .logotip-box__separator {
+        position: relative;
+
+        width: 1px;
+        height: 100%;
+
+        background-color: white;
+    }
+
+    .adress-box {
+        position: relative;
+
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+
+        margin-left: 30px;
+    }
+
+    .location {
+        position: relative;
+
+        width: 25px;
+        height: 25px;
+
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+
+    .adress-box__text {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 14px;
+        margin-left: 5px;
+
+        color: white;
+    }
+
+    .navigation-menu {
+        position: relative;
+
+        height: 100%;
+
+        margin-left: auto;
+        margin-right: 0px;
+
+        display: none;
+    }
+
+    .navigation-menu__list {
+        position: relative;
+
+        display: flex;
+
+        list-style-type: none;
+
+        margin-top: 42px;
+    }
+
+    .list-element {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .list-element:first-child {
+        margin-left: 0px;
+    }
+
+    .list-element:last-child {
+        margin-right: 0px;
+    }
+
+    .list-element a {
+        position: relative;
+
+        text-decoration: none;
+
+        color: white;
+    }
+
+    .device-menu__box {
+        position: relative;
+
+        width: 46px;
+        height: 46px;
+
+        margin-left: auto;
+        margin-right: 0px;
+        margin-top: 27px;
+    }
+
+    .device-menu__box:hover {
+        cursor: pointer;
+    }
+
+    .box-line {
+        position: relative;
+
+        width: 100%;
+        height: 6px;
+
+        margin-top: 7px;
+        margin-bottom: 7px;
+
+        background-color: white;
+    }
+
+    .main-screensaver {
+        position: relative;
+
+        width: 100%;
+        height: 620px;
+
+        background-image: url(./static/picture/header-background.svg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .header-frame {
+        position: relative;
+
+        width: 650px;
+        height: 245px;
+
+        border: 1px solid #C8A35F;
+        box-sizing: border-box;
+
+        margin-left: auto;
+        margin-right: auto;
+        
+        top: 155px;
+    }
+
+    .header-frame h1 {
+        position: relative;
+
+        font-size: 50px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+
+        text-align: center;
+
+        color: white;
+
+        margin-top: 45px;
+    }
+
+    .frame-subtitle {
+        position: relative;
+
+        text-align: center;
+
+        margin-top: 45px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .frame-subtitle h5 {
+        position: relative;
+
+        display: block;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: normal;
+        font-style: normal;
+
+        color: white;
+
+        margin-left: 34px;
+        margin-right: 34px;
+    }
+
+    .mouse-link {
+        position: relative;
+
+        width: 100%;
+
+        top: 285px;
+    }
+
+    .mouse-link button {
+        position: relative;
+
+        display: block;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+    }
+
+    .mouse-link button:hover {
+        cursor: pointer;
+    }
+
+    .section {
+        position: relative;
+
+        width: 100%;
+    }
+
+    .services {
+        position: relative;
+
+        width: 100%;
+        height: 400px;
+
+        background-color: #393F47;
+
+        margin-top: -1px;
+    }
+
+    .services__background-block {
+        position: absolute;
+
+        width: 410px;
+        height: 100%;
+
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+
+        background-color: #2F343A;
+    }
+
+    .services-slider {
+        position: relative;
+
+        width: 100%;
+        height: 312px;
+
+        top: 60px;
+
+        display: flex;
+    }
+
+    .slide {
+        position: relative;
+
+        display: flex;
+
+        width: 83%;
+        height: 100%;
+    }
+
+    .slide__left-part {}
+
+    .strip {
+        position: relative;
+
+        width: 60px;
+        height: 3px;
+
+        background-color: #C8A35F;
+    }
+
+    .slide-title {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 50px;
+    }
+
+    .slide-title h2 {
+        position: relative;
+
+        font-size: 26px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+
+        color: white;
+    }
+
+    .slide-subtitle {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 42px;
+    }
+
+    .slide-subtitle h1 {
+        position: relative;
+
+        font-size: 16px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: white;
+    }
+
+    .slide-button {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 41px;
+    }
+
+    .slide-button button {
+        position: relative;
+
+        width: 100%;
+        height: 55px;
+
+        background-color: #C8A35F;
+
+        border: none;
+
+        font-size: 16px;
+        font-family: "Roboto Medium";
+        font-weight: 500;
+        font-style: normal;
+
+        color: white;
+    }
+
+    .slide__right-part img {
+        position: relative;
+
+        margin-top: 40px;
+        margin-left: -80px;
+    }
+
+    .slider__buttons-box {
+        position: relative;
+
+        width: 20%;
+
+        margin-left: -50px;
+        
+    }
+
+    .button-next {
+        position: relative;
+
+        display: flex;
+
+        width: 100%;
+        height: 24px;
+
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+    }
+
+    .button-next h1 {
+        position: relative;
+
+        font-size: 16px;
+        font-family: "Roboto Medium";
+        font-weight: 500;
+        font-style: normal;
+
+        color: #C8A35F;
+
+        top: 2px;
+    }
+
+    .button-next img {
+        margin-left: auto;
+    }
+
+    .button-back {
+        position: relative;
+
+        display: flex;
+
+        width: 100%;
+        height: 24px;
+
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+
+        margin-top: 262px;
+    }
+
+    .button-back h1 {
+        position: relative;
+
+        font-size: 16px;
+        font-family: "Roboto Medium";
+        font-weight: 500;
+        font-style: normal;
+
+        color: #C8A35F;
+
+        top: 2px;
+    }
+
+    .button-back img {
+        margin-right: auto;
+    }
+
+    .all-services {
+        position: relative;
+
+        width: 100%;
+        height: 684px;
+
+        background-color: #2F343A;
+    }
+
+    .all-services__box {
+        position: relative;
+
+        width: 100%;
+        height: 504px;
+
+        top: 120px;
+    }
+
+    .all-services__title {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 40px;
+    }
+
+    .all-services__title h2 {
+        font-size: 26px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+
+        color: white;
+    }
+
+    .panel-block {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 50px;
+    }
+
+    .panel__top-part {
+        position: relative;
+
+        width: 100%;
+
+        display: flex;
+    }
+
+    .panel__down-part {
+        position: relative;
+
+        width: 100%;
+
+        display: flex;
+
+        margin-top: 1px;
+    }
+
+    .panel {
+        position: relative;
+
+        width: 277px;
+        height: 180px;
+
+        background-color: #393F47;
+
+        margin-left: 1px;
+    }
+
+    .panel:first-child {
+        margin-left: 0px;
+    }
+
+    .panel-icon__box {
+        position: relative;
+
+        width: 50px;
+        height: 50px;
+
+        border-radius: 100px;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+
+    .panel-icon__box img {
+        position: relative;
+
+        display: block;
+
+        width: 20px;
+        height: 20px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        top: 16px;
+    }
+
+    .panel h2 {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+
+        color: white;
+
+        text-align: center;
+
+        margin-top: 30px;
+    }
+
+    .about-company {
+        position: relative;
+
+        width: 100%;
+        height: 500px;
+
+        background-color: #2F343A;
+    }
+
+    .about-company__box {
+        position: relative;
+
+        width: 100%;
+        height: 382px;
+
+        display: flex;
+    }
+
+    .about-company__background-block {
+        position: absolute;
+
+        width: 410px;
+        height: 100%;
+
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+
+        background-color: #393F47;
+    }
+
+    .information__left-part {
+        position: relative;
+
+        width: 40%;
+        height: 100%;
+    }
+
+    .about-strip {
+        position: relative;
+
+        margin-top: 85px;
+    }
+
+    .about-company__title {
+        position: relative;
+
+        margin-top: 20px;
+
+        color: white;
+    }
+
+    .about-company__title h2 {
+        font-size: 26px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+    } 
+
+    .all-services__subtitle {
+        position: relative;
+
+        margin-top: 20px;
+
+        color: white;
+    }
+
+    .all-services__subtitle h6 {
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .information__right-part {
+        position: relative;
+
+        width: 54%;
+        height: 100%;
+
+        margin-left: auto;
+        margin-right: 0px;
+    }
+
+    .data-panel {
+        position: relative;
+
+        width: 100%;
+        height: 320px;
+
+        margin-top: 85px;
+    }
+
+    .data-panel__top-part {
+        position: relative;
+
+        width: 100%;
+
+        display: flex;
+    }
+
+    .offices {
+        position: relative;
+
+        width: 127px;
+        
+
+        background-color: white;
+
+        border: 1px solid #C8A35F;
+        border-right: none;
+
+        margin-top: -1px;
+    }
+
+    .offices h1 {
+        position: relative;
+
+        font-size: 26px;
+        font-family: "Roboto Bold";
+        font-weight: bold;
+        font-style: normal;
+
+        margin-top: 15px;
+
+        text-align: center;
+
+        color: #2F343A;
+    }
+
+    .offices h5 {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 4px;
+
+        text-align: center;
+
+        color: black;
+    }
+
+    .offices h6 {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 4px;
+
+        text-align: center;
+
+        color: black;
+    }
+
+    .trucks {
+        position: relative;
+
+        width: 127px;
+        
+
+        background-color: white;
+
+        border: 1px solid #C8A35F;
+        border-bottom: none;
+
+        margin-top: -1px;
+    }
+
+    .trucks h1 {
+        position: relative;
+
+        font-size: 26px;
+        font-family: "Roboto Bold";
+        font-weight: bold;
+        font-style: normal;
+
+        margin-top: 15px;
+
+        text-align: center;
+
+        color: #2F343A;
+    }
+
+    .trucks h5 {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 4px;
+
+        text-align: center;
+
+        color: black;
+    }
+
+    .trucks h6 {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 4px;
+
+        text-align: center;
+
+        color: black;
+    }
+
+    .picture {
+        position: relative;
+    }
+
+    .picture img {
+        width: 127px;
+
+        margin-top: -1px;
+    }
+
+    .top-picture {
+        position: relative;
+    }
+
+    .down-picture {}
+
+    .data-panel__down-part {
+        position: relative;
+
+        width: 100%;
+
+        display: flex;
+
+        margin-top: 1px;
+    }
+
+    .staff {
+        position: relative;
+
+        width: 123px;
+        height: 98px;
+
+        background-color: white;
+
+        outline: 1px solid #C8A35F;
+    }
+
+    .staff h1 {
+        position: relative;
+
+        font-size: 26px;
+        font-family: "Roboto Bold";
+        font-weight: bold;
+        font-style: normal;
+
+        margin-top: 15px;
+
+        text-align: center;
+
+        color: #2F343A;
+    }
+
+    .staff h5 {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 4px;
+
+        text-align: center;
+
+        color: black;
+    }
+
+    .staff h6 {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 4px;
+
+        text-align: center;
+
+        color: black;
+    }
+
+    #map {
+        height: 250px;
+    }
+
+    .footer {
+        position: relative;
+
+        width: 100%;
+        height: 160px;
+
+        background-color: #C8A35F;
+    }
+
+    .footer-logo {
+        position: relative;
+
+        height: 100%;
+    }
+
+    .footer-logo img {
+        position: relative;
+
+        margin-top: 57px;
+    }
+
+    .footer-address {
+        position: relative;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 54px;
+    }
+
+    .address-building {
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #F2F2F2;
+    }
+
+    .address-email {
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #2F343A;
+
+        margin-top: 10px;
+    }
+
+    .footer-phone {
+        position: relative;
+
+        margin-left: auto;
+        margin-right: 0px;
+        margin-top: 54px;
+    }
+
+    .phone-number__first {
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #F2F2F2;
+    }
+
+    .phone-number__second {
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #F2F2F2;
+
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width : 1224px) {
+    .header {
+        position: relative;
+    
+        width: 100%;
+        height: 765px;
+    
+    }
+    
+    .header__primary-menu {
+        position: relative;
+    
+        width: 100%;
+        height: 45px;
+    
+        background-color: #C8A35F;
+    }
+
+    .container {
+        position: relative;
+
+        width: 1110px;
+        height: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .primary-menu__list-languages {
+        position: relative;
+
+        height: 100%;
+
+        list-style-type: none;
+
+        display: flex;
+    }
+
+    .russian-language {
+        position: relative;
+
+        opacity: 1;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-right: 5px;
+        margin-top: 16px;
+    }
+
+    .english-language {
+        position: relative;
+
+        opacity: .5;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 16px;
+    }
+
+    .french-language {
+        position: relative;
+
+        opacity: .5;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-left: 5px;
+        margin-top: 16px;
+    }
+
+    .button-languages {
+        position: relative;
+
+        background-color: rgba(0, 0, 0, 0);
+
+        border: none;
+
+        color: white;
+    }
+    
+    .primary-menu__phone {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 16px;
+        margin-left: auto;
+        margin-right: auto;
+
+        color: white;
+    }
+
+    .primary-menu__email {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 16px;
+        margin-left: auto;
+
+        color: white;
+    }
+
+    .secondary-menu {
+        position: relative;
+
+        width: 100%;
+        height: 100px;
+
+        background-color: #2F343A;
+
+        margin-top: -1px;
+    }
+
+    .logotip-box {
+        position: relative;
+
+        display: flex;
+
+        height: 46px;
+
+        margin-right: auto;
+        margin-top: 27px;
+    }
+
+    .logotip {
+        position: relative;
+
+        display: block;
+
+        width: 160px;
+
+        margin-right: 30px;
+    }
+
+    .logotip-box__separator {
+        position: relative;
+
+        width: 1px;
+        height: 100%;
+
+        background-color: white;
+    }
+
+    .adress-box {
+        position: relative;
+
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+
+        margin-left: 30px;
+    }
+
+    .location {
+        position: relative;
+
+        width: 25px;
+        height: 25px;
+
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+
+    .adress-box__text {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 14px;
+        margin-left: 5px;
+
+        color: white;
+    }
+
+    .navigation-menu {
+        position: relative;
+
+        height: 100%;
+
+        margin-left: auto;
+        margin-right: 0px;
+    }
+
+    .navigation-menu__list {
+        position: relative;
+
+        display: flex;
+
+        list-style-type: none;
+
+        margin-top: 42px;
+    }
+
+    .list-element {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .list-element:first-child {
+        margin-left: 0px;
+    }
+
+    .list-element:last-child {
+        margin-right: 0px;
+    }
+
+    .list-element a {
+        position: relative;
+
+        text-decoration: none;
+
+        color: white;
+    }
+
+    .main-screensaver {
+        position: relative;
+
+        width: 100%;
+        height: 620px;
+
+        background-image: url(./static/picture/header-background.svg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .header-frame {
+        position: relative;
+
+        width: 920px;
+        height: 245px;
+
+        border: 1px solid #C8A35F;
+        box-sizing: border-box;
+
+        margin-left: auto;
+        margin-right: auto;
+        
+        top: 155px;
+    }
+
+    .header-frame h1 {
+        position: relative;
+
+        font-size: 64px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+
+        text-align: center;
+
+        color: white;
+
+        margin-top: 45px;
+    }
+
+    .frame-subtitle {
+        position: relative;
+
+        text-align: center;
+
+        margin-top: 45px;
+        margin-left: 72px;
+        margin-right: 72px;
+    }
+
+    .frame-subtitle h5 {
+        position: relative;
+
+        display: block;
+
+        font-size: 18px;
+        font-family: "Roboto Regular";
+        font-weight: normal;
+        font-style: normal;
+
+        color: white;
+
+        margin-left: 34px;
+        margin-right: 34px;
+    }
+
+    .mouse-link {
+        position: relative;
+
+        width: 100%;
+
+        top: 285px;
+    }
+
+    .mouse-link button {
+        position: relative;
+
+        display: block;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+    }
+
+    .section {
+        position: relative;
+
+        width: 100%;
+        height: 1908px;
+    }
+
+    .services {
+        position: relative;
+
+        width: 100%;
+        height: 560px;
+
+        background-color: #393F47;
+
+        margin-top: -1px;
+    }
+
+    .services__background-block {
+        position: absolute;
+
+        width: 410px;
+        height: 100%;
+
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+
+        background-color: #2F343A;
+    }
+
+    .services-slider {
+        position: relative;
+
+        width: 100%;
+        height: 312px;
+
+        top: 120px;
+
+        display: flex;
+    }
+
+    .slide {
+        position: relative;
+
+        display: flex;
+
+        width: 83%;
+        height: 100%;
+    }
+
+    .slide__left-part {}
+
+    .strip {
+        position: relative;
+
+        width: 90px;
+        height: 6px;
+
+        background-color: #C8A35F;
+    }
+
+    .slide-title {
+        position: relative;
+
+        width: 80%;
+
+        margin-top: 40px;
+    }
+
+    .slide-title h2 {
+        position: relative;
+
+        font-size: 43px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+
+        color: white;
+    }
+
+    .slide-subtitle {
+        position: relative;
+
+        width: 70%;
+
+        margin-top: 30px;
+    }
+
+    .slide-subtitle h1 {
+        position: relative;
+
+        font-size: 18px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: white;
+    }
+
+    .slide-button {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 32px;
+    }
+
+    .slide-button button {
+        position: relative;
+
+        width: 220px;
+        height: 55px;
+
+        background-color: #C8A35F;
+
+        border: none;
+
+        font-size: 16px;
+        font-family: "Roboto Medium";
+        font-weight: 500;
+        font-style: normal;
+
+        color: white;
+    }
+
+    .slide__right-part img {
+        position: relative;
+
+        margin-top: 40px;
+    }
+
+    .slider__buttons-box {
+        position: relative;
+
+        width: 17%;
+    }
+
+    .button-next {
+        position: relative;
+
+        display: flex;
+
+        width: 100%;
+        height: 24px;
+
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+    }
+
+    .button-next h1 {
+        position: relative;
+
+        font-size: 16px;
+        font-family: "Roboto Medium";
+        font-weight: 500;
+        font-style: normal;
+
+        color: #C8A35F;
+
+        top: 2px;
+    }
+
+    .button-next img {
+        margin-left: auto;
+    }
+
+    .button-back {
+        position: relative;
+
+        display: flex;
+
+        width: 100%;
+        height: 24px;
+
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+
+        margin-top: 262px;
+    }
+
+    .button-back h1 {
+        position: relative;
+
+        font-size: 16px;
+        font-family: "Roboto Medium";
+        font-weight: 500;
+        font-style: normal;
+
+        color: #C8A35F;
+
+        top: 2px;
+    }
+
+    .button-back img {
+        margin-right: auto;
+    }
+
+    .all-services {
+        position: relative;
+
+        width: 100%;
+        height: 684px;
+
+        background-color: #2F343A;
+    }
+
+    .all-services__box {
+        position: relative;
+
+        width: 100%;
+        height: 504px;
+
+        top: 120px;
+    }
+
+    .all-services__title {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 40px;
+    }
+
+    .all-services__title h2 {
+        font-size: 40px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+
+        color: white;
+    }
+
+    .panel-block {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 50px;
+    }
+
+    .panel__top-part {
+        position: relative;
+
+        width: 100%;
+
+        display: flex;
+    }
+
+    .panel__down-part {
+        position: relative;
+
+        width: 100%;
+
+        display: flex;
+
+        margin-top: 1px;
+    }
+
+    .panel {
+        position: relative;
+
+        width: 277px;
+        height: 180px;
+
+        background-color: #393F47;
+
+        margin-left: 1px;
+    }
+
+    .panel:first-child {
+        margin-left: 0px;
+    }
+
+    .panel-icon__box {
+        position: relative;
+
+        width: 70px;
+        height: 70px;
+
+        border-radius: 100px;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 35px;
+    }
+
+    .panel-icon__box img {
+        position: relative;
+
+        display: block;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        top: 20px;
+    }
+
+    .panel h2 {
+        position: relative;
+
+        font-size: 18px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+
+        color: white;
+
+        text-align: center;
+
+        margin-top: 23px;
+    }
+
+    .about-company {
+        position: relative;
+
+        width: 100%;
+        height: 662px;
+
+        background-color: #2F343A;
+    }
+
+    .about-company__box {
+        position: relative;
+
+        width: 100%;
+        height: 482px;
+
+        top: 60px;
+
+        display: flex;
+    }
+
+    .about-company__background-block {
+        position: absolute;
+
+        width: 410px;
+        height: 100%;
+
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+
+        background-color: #393F47;
+    }
+
+    .information__left-part {
+        position: relative;
+
+        width: 40%;
+        height: 100%;
+    }
+
+    .about-strip {
+        position: relative;
+
+        margin-top: 80px;
+    }
+
+    .about-company__title {
+        position: relative;
+
+        margin-top: 40px;
+
+        color: white;
+    }
+
+    .about-company__title h2 {
+        font-size: 40px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+    } 
+
+    .all-services__subtitle {
+        position: relative;
+
+        margin-top: 30px;
+
+        color: white;
+    }
+
+    .all-services__subtitle h6 {
+        font-size: 16px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .information__right-part {
+        position: relative;
+
+        width: 54%;
+        height: 100%;
+
+        margin-left: auto;
+        margin-right: 0px;
+    }
+
+    .data-panel {
+        position: relative;
+
+        width: 100%;
+        height: 320px;
+
+        margin-top: 85px;
+    }
+
+    .data-panel__top-part {
+        position: relative;
+
+        width: 100%;
+
+        display: flex;
+    }
+
+    .offices {
+        position: relative;
+
+        width: 200px;
+        height: 160px;
+
+        background-color: white;
+
+        outline: 1px solid #C8A35F;
+    }
+
+    .offices h1 {
+        position: relative;
+
+        font-size: 64px;
+        font-family: "Roboto Bold";
+        font-weight: bold;
+        font-style: normal;
+
+        line-height: 75px;
+
+        text-align: center;
+
+        color: #2F343A;
+
+        margin-top: 16px;
+    }
+
+    .offices h5 {
+        position: relative;
+
+        font-size: 18px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 21px;
+
+        text-align: center;
+
+        color: black;
+
+        margin-top: 4px;
+    }
+
+    .offices h6 {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 21px;
+
+        text-align: center;
+
+        color: black;
+
+        margin-top: 4px;
+    }
+
+    .trucks {
+        position: relative;
+
+        width: 200px;
+        height: 160px;
+
+        background-color: white;
+
+        outline: 1px solid #C8A35F;
+    }
+
+    .trucks h1 {
+        position: relative;
+
+        font-size: 64px;
+        font-family: "Roboto Bold";
+        font-weight: bold;
+        font-style: normal;
+
+        line-height: 75px;
+
+        text-align: center;
+
+        color: #2F343A;
+
+        margin-top: 16px;
+    }
+
+    .trucks h5 {
+        position: relative;
+
+        font-size: 18px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 21px;
+
+        text-align: center;
+
+        color: black;
+
+        margin-top: 4px;
+    }
+
+    .trucks h6 {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 21px;
+
+        text-align: center;
+
+        color: black;
+
+        margin-top: 4px;
+    }
+
+    .picture {
+        position: relative;
+
+        width: 200px;
+        height: 162px;
+    }
+
+    .top-picture {
+        margin-top: -1px;
+    }
+
+    .down-picture {
+        margin-top: -1px;
+    }
+
+    .data-panel__down-part {
+        position: relative;
+
+        width: 100%;
+
+        display: flex;
+
+        margin-top: 1px;
+    }
+
+    .staff {
+        position: relative;
+
+        width: 200px;
+        height: 160px;
+
+        background-color: white;
+
+        outline: 1px solid #C8A35F;
+    }
+
+    .staff h1 {
+        position: relative;
+
+        font-size: 64px;
+        font-family: "Roboto Bold";
+        font-weight: bold;
+        font-style: normal;
+
+        line-height: 75px;
+
+        text-align: center;
+
+        color: #2F343A;
+
+        margin-top: 16px;
+    }
+
+    .staff h5 {
+        position: relative;
+
+        font-size: 18px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 21px;
+
+        text-align: center;
+
+        color: black;
+
+        margin-top: 4px;
+    }
+
+    .staff h6 {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 21px;
+
+        text-align: center;
+
+        color: black;
+
+        margin-top: 4px;
+    }
+
+    #map {
+        height: 450px;
+    }
+
+    .footer {
+        position: relative;
+
+        width: 100%;
+        height: 160px;
+
+        background-color: #C8A35F;
+
+        margin-top: 448px;
+    }
+
+    .footer-logo {
+        position: relative;
+
+        height: 100%;
+    }
+
+    .footer-logo img {
+        position: relative;
+
+        margin-top: 57px;
+    }
+
+    .footer-address {
+        position: relative;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 54px;
+    }
+
+    .address-building {
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #F2F2F2;
+    }
+
+    .address-email {
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #2F343A;
+
+        margin-top: 10px;
+    }
+
+    .footer-phone {
+        position: relative;
+
+        margin-left: auto;
+        margin-right: 0px;
+        margin-top: 54px;
+    }
+
+    .phone-number__first {
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #F2F2F2;
+    }
+
+    .phone-number__second {
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #F2F2F2;
+
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width : 1824px) {
+    .header {
+        position: relative;
+    
+        width: 100%;
+        height: 765px;
+    
+    }
+    
+    .header__primary-menu {
+        position: relative;
+    
+        width: 100%;
+        height: 45px;
+    
+        background-color: #C8A35F;
+    }
+
+    .container {
+        position: relative;
+
+        width: 1110px;
+        height: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .primary-menu__list-languages {
+        position: relative;
+
+        height: 100%;
+
+        list-style-type: none;
+
+        display: flex;
+    }
+
+    .russian-language {
+        position: relative;
+
+        opacity: 1;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-right: 5px;
+        margin-top: 16px;
+    }
+
+    .english-language {
+        position: relative;
+
+        opacity: .5;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 16px;
+    }
+
+    .french-language {
+        position: relative;
+
+        opacity: .5;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-left: 5px;
+        margin-top: 16px;
+    }
+
+    .button-languages {
+        position: relative;
+
+        background-color: rgba(0, 0, 0, 0);
+
+        border: none;
+
+        color: white;
+    }
+    
+    .primary-menu__phone {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 16px;
+        margin-left: auto;
+        margin-right: auto;
+
+        color: white;
+    }
+
+    .primary-menu__email {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 16px;
+        margin-left: auto;
+
+        color: white;
+    }
+
+    .secondary-menu {
+        position: relative;
+
+        width: 100%;
+        height: 100px;
+
+        background-color: #2F343A;
+
+        margin-top: -1px;
+    }
+
+    .logotip-box {
+        position: relative;
+
+        display: flex;
+
+        height: 46px;
+
+        margin-right: auto;
+        margin-top: 27px;
+    }
+
+    .logotip {
+        position: relative;
+
+        display: block;
+
+        width: 160px;
+
+        margin-right: 30px;
+    }
+
+    .logotip-box__separator {
+        position: relative;
+
+        width: 1px;
+        height: 100%;
+
+        background-color: white;
+    }
+
+    .adress-box {
+        position: relative;
+
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+
+        margin-left: 30px;
+    }
+
+    .location {
+        position: relative;
+
+        width: 25px;
+        height: 25px;
+
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+
+    .adress-box__text {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 14px;
+        margin-left: 5px;
+
+        color: white;
+    }
+
+    .navigation-menu {
+        position: relative;
+
+        height: 100%;
+
+        margin-left: auto;
+        margin-right: 0px;
+    }
+
+    .navigation-menu__list {
+        position: relative;
+
+        display: flex;
+
+        list-style-type: none;
+
+        margin-top: 42px;
+    }
+
+    .list-element {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .list-element:first-child {
+        margin-left: 0px;
+    }
+
+    .list-element:last-child {
+        margin-right: 0px;
+    }
+
+    .list-element a {
+        position: relative;
+
+        text-decoration: none;
+
+        color: white;
+    }
+
+    .main-screensaver {
+        position: relative;
+
+        width: 100%;
+        height: 620px;
+
+        background-image: url(./static/picture/header-background.svg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .header-frame {
+        position: relative;
+
+        width: 920px;
+        height: 245px;
+
+        border: 1px solid #C8A35F;
+        box-sizing: border-box;
+
+        margin-left: auto;
+        margin-right: auto;
+        
+        top: 155px;
+    }
+
+    .header-frame h1 {
+        position: relative;
+
+        font-size: 64px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+
+        text-align: center;
+
+        color: white;
+
+        margin-top: 45px;
+    }
+
+    .frame-subtitle {
+        position: relative;
+
+        text-align: center;
+
+        margin-top: 45px;
+        margin-left: 72px;
+        margin-right: 72px;
+    }
+
+    .frame-subtitle h5 {
+        position: relative;
+
+        display: block;
+
+        font-size: 18px;
+        font-family: "Roboto Regular";
+        font-weight: normal;
+        font-style: normal;
+
+        color: white;
+
+        margin-left: 34px;
+        margin-right: 34px;
+    }
+
+    .mouse-link {
+        position: relative;
+
+        width: 100%;
+
+        top: 285px;
+    }
+
+    .mouse-link button {
+        position: relative;
+
+        display: block;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+    }
+
+    .section {
+        position: relative;
+
+        width: 100%;
+        height: 1908px;
+    }
+
+    .services {
+        position: relative;
+
+        width: 100%;
+        height: 560px;
+
+        background-color: #393F47;
+
+        margin-top: -1px;
+    }
+
+    .services__background-block {
+        position: absolute;
+
+        width: 410px;
+        height: 100%;
+
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+
+        background-color: #2F343A;
+    }
+
+    .services-slider {
+        position: relative;
+
+        width: 100%;
+        height: 312px;
+
+        top: 120px;
+
+        display: flex;
+    }
+
+    .slide {
+        position: relative;
+
+        display: flex;
+
+        width: 83%;
+        height: 100%;
+    }
+
+    .slide__left-part {}
+
+    .strip {
+        position: relative;
+
+        width: 90px;
+        height: 6px;
+
+        background-color: #C8A35F;
+    }
+
+    .slide-title {
+        position: relative;
+
+        width: 80%;
+
+        margin-top: 40px;
+    }
+
+    .slide-title h2 {
+        position: relative;
+
+        font-size: 43px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+
+        color: white;
+    }
+
+    .slide-subtitle {
+        position: relative;
+
+        width: 70%;
+
+        margin-top: 30px;
+    }
+
+    .slide-subtitle h1 {
+        position: relative;
+
+        font-size: 18px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: white;
+    }
+
+    .slide-button {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 32px;
+    }
+
+    .slide-button button {
+        position: relative;
+
+        width: 220px;
+        height: 55px;
+
+        background-color: #C8A35F;
+
+        border: none;
+
+        font-size: 16px;
+        font-family: "Roboto Medium";
+        font-weight: 500;
+        font-style: normal;
+
+        color: white;
+    }
+
+    .slide__right-part img {
+        position: relative;
+
+        margin-top: 40px;
+    }
+
+    .slider__buttons-box {
+        position: relative;
+
+        width: 17%;
+    }
+
+    .button-next {
+        position: relative;
+
+        display: flex;
+
+        width: 100%;
+        height: 24px;
+
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+    }
+
+    .button-next h1 {
+        position: relative;
+
+        font-size: 16px;
+        font-family: "Roboto Medium";
+        font-weight: 500;
+        font-style: normal;
+
+        color: #C8A35F;
+
+        top: 2px;
+    }
+
+    .button-next img {
+        margin-left: auto;
+    }
+
+    .button-back {
+        position: relative;
+
+        display: flex;
+
+        width: 100%;
+        height: 24px;
+
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+
+        margin-top: 262px;
+    }
+
+    .button-back h1 {
+        position: relative;
+
+        font-size: 16px;
+        font-family: "Roboto Medium";
+        font-weight: 500;
+        font-style: normal;
+
+        color: #C8A35F;
+
+        top: 2px;
+    }
+
+    .button-back img {
+        margin-right: auto;
+    }
+
+    .all-services {
+        position: relative;
+
+        width: 100%;
+        height: 684px;
+
+        background-color: #2F343A;
+    }
+
+    .all-services__box {
+        position: relative;
+
+        width: 100%;
+        height: 504px;
+
+        top: 120px;
+    }
+
+    .all-services__title {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 40px;
+    }
+
+    .all-services__title h2 {
+        font-size: 40px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+
+        color: white;
+    }
+
+    .panel-block {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 50px;
+    }
+
+    .panel__top-part {
+        position: relative;
+
+        width: 100%;
+
+        display: flex;
+    }
+
+    .panel__down-part {
+        position: relative;
+
+        width: 100%;
+
+        display: flex;
+
+        margin-top: 1px;
+    }
+
+    .panel {
+        position: relative;
+
+        width: 277px;
+        height: 180px;
+
+        background-color: #393F47;
+
+        margin-left: 1px;
+    }
+
+    .panel:first-child {
+        margin-left: 0px;
+    }
+
+    .panel-icon__box {
+        position: relative;
+
+        width: 70px;
+        height: 70px;
+
+        border-radius: 100px;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 35px;
+    }
+
+    .panel-icon__box img {
+        position: relative;
+
+        display: block;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        top: 20px;
+    }
+
+    .panel h2 {
+        position: relative;
+
+        font-size: 18px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+
+        color: white;
+
+        text-align: center;
+
+        margin-top: 23px;
+    }
+
+    .about-company {
+        position: relative;
+
+        width: 100%;
+        height: 662px;
+
+        background-color: #2F343A;
+    }
+
+    .about-company__box {
+        position: relative;
+
+        width: 100%;
+        height: 482px;
+
+        top: 60px;
+
+        display: flex;
+    }
+
+    .about-company__background-block {
+        position: absolute;
+
+        width: 410px;
+        height: 100%;
+
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+
+        background-color: #393F47;
+    }
+
+    .information__left-part {
+        position: relative;
+
+        width: 40%;
+        height: 100%;
+    }
+
+    .about-strip {
+        position: relative;
+
+        margin-top: 80px;
+    }
+
+    .about-company__title {
+        position: relative;
+
+        margin-top: 40px;
+
+        color: white;
+    }
+
+    .about-company__title h2 {
+        font-size: 40px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+    } 
+
+    .all-services__subtitle {
+        position: relative;
+
+        margin-top: 30px;
+
+        color: white;
+    }
+
+    .all-services__subtitle h6 {
+        font-size: 16px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .information__right-part {
+        position: relative;
+
+        width: 54%;
+        height: 100%;
+
+        margin-left: auto;
+        margin-right: 0px;
+    }
+
+    .data-panel {
+        position: relative;
+
+        width: 100%;
+        height: 320px;
+
+        margin-top: 85px;
+    }
+
+    .data-panel__top-part {
+        position: relative;
+
+        width: 100%;
+
+        display: flex;
+    }
+
+    .offices {
+        position: relative;
+
+        width: 200px;
+        height: 160px;
+
+        background-color: white;
+
+        outline: 1px solid #C8A35F;
+    }
+
+    .offices h1 {
+        position: relative;
+
+        font-size: 64px;
+        font-family: "Roboto Bold";
+        font-weight: bold;
+        font-style: normal;
+
+        line-height: 75px;
+
+        text-align: center;
+
+        color: #2F343A;
+
+        margin-top: 16px;
+    }
+
+    .offices h5 {
+        position: relative;
+
+        font-size: 18px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 21px;
+
+        text-align: center;
+
+        color: black;
+
+        margin-top: 4px;
+    }
+
+    .offices h6 {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 21px;
+
+        text-align: center;
+
+        color: black;
+
+        margin-top: 4px;
+    }
+
+    .trucks {
+        position: relative;
+
+        width: 200px;
+        height: 160px;
+
+        background-color: white;
+
+        outline: 1px solid #C8A35F;
+    }
+
+    .trucks h1 {
+        position: relative;
+
+        font-size: 64px;
+        font-family: "Roboto Bold";
+        font-weight: bold;
+        font-style: normal;
+
+        line-height: 75px;
+
+        text-align: center;
+
+        color: #2F343A;
+
+        margin-top: 16px;
+    }
+
+    .trucks h5 {
+        position: relative;
+
+        font-size: 18px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 21px;
+
+        text-align: center;
+
+        color: black;
+
+        margin-top: 4px;
+    }
+
+    .trucks h6 {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 21px;
+
+        text-align: center;
+
+        color: black;
+
+        margin-top: 4px;
+    }
+
+    .picture {
+        position: relative;
+
+        width: 200px;
+        height: 162px;
+    }
+
+    .top-picture {
+        margin-top: -1px;
+    }
+
+    .down-picture {
+        margin-top: -1px;
+    }
+
+    .data-panel__down-part {
+        position: relative;
+
+        width: 100%;
+
+        display: flex;
+
+        margin-top: 1px;
+    }
+
+    .staff {
+        position: relative;
+
+        width: 200px;
+        height: 160px;
+
+        background-color: white;
+
+        outline: 1px solid #C8A35F;
+    }
+
+    .staff h1 {
+        position: relative;
+
+        font-size: 64px;
+        font-family: "Roboto Bold";
+        font-weight: bold;
+        font-style: normal;
+
+        line-height: 75px;
+
+        text-align: center;
+
+        color: #2F343A;
+
+        margin-top: 16px;
+    }
+
+    .staff h5 {
+        position: relative;
+
+        font-size: 18px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 21px;
+
+        text-align: center;
+
+        color: black;
+
+        margin-top: 4px;
+    }
+
+    .staff h6 {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 21px;
+
+        text-align: center;
+
+        color: black;
+
+        margin-top: 4px;
+    }
+
+    #map {
+        height: 450px;
+    }
+
+    .footer {
+        position: relative;
+
+        width: 100%;
+        height: 160px;
+
+        background-color: #C8A35F;
+
+        margin-top: 448px;
+    }
+
+    .footer-logo {
+        position: relative;
+
+        height: 100%;
+    }
+
+    .footer-logo img {
+        position: relative;
+
+        margin-top: 57px;
+    }
+
+    .footer-address {
+        position: relative;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 54px;
+    }
+
+    .address-building {
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #F2F2F2;
+    }
+
+    .address-email {
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #2F343A;
+
+        margin-top: 10px;
+    }
+
+    .footer-phone {
+        position: relative;
+
+        margin-left: auto;
+        margin-right: 0px;
+        margin-top: 54px;
+    }
+
+    .phone-number__first {
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #F2F2F2;
+    }
+
+    .phone-number__second {
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #F2F2F2;
+
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5),only screen and (min-device-pixel-ratio : 1.5) {}
