@@ -25,1199 +25,2409 @@ body {
     box-sizing: border-box;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {.device-menu__shell {
-    position: absolute;
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .device-menu__shell {
+        position: absolute;
 
-    width: 100%;
-    height: 200px;
+        width: 100%;
+        height: 250px;
 
-    top: 60px;
-    left: 0px;
+        top: 60px;
+        left: 0px;
 
-    z-index: 5;
+        z-index: 5;
 
-    display: none;
-}
+        display: none;
+    }
 
-.device-menu {
-    position: relative;
+    .device-menu {
+        position: relative;
 
-    height: 100%;
+        height: 100%;
 
-    display: flex;
+        display: flex;
 
-    margin-left: 15px;
-    margin-right: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
 
-    background-color: #393F47;
-}
+        background-color: #393F47;
+    }
 
-.device-menu ul {
-    position: relative;
+    .device-menu ul {
+        position: relative;
 
-    display: block;
+        display: block;
 
-    width: 90%;
+        width: 80%;
 
-    list-style-type: none;
-}
+        list-style-type: none;
+    }
 
-.device-menu ul li {
-    position: relative;
+    .device-menu ul li {
+        position: relative;
 
-    width: 95%;
-    height: 30px;
+        width: 85%;
+        height: 30px;
 
-    margin-top: 16px;
-    margin-bottom: 16px;
-    margin-left: auto;
-    margin-right: auto;
-}
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.device-menu ul li:hover {
-    background-color: #C8A35F;
-}
+    .device-menu ul li:hover {
+        background-color: #C8A35F;
+    }
 
-.device-menu ul li a {
-    position: relative;
+    .device-menu ul li a {
+        position: relative;
 
-    display: block;
+        display: block;
 
-    width: 100%;
-    height: 100%;
+        width: 100%;
+        height: 100%;
 
-    text-decoration: none;
+        text-decoration: none;
 
-    font-size: 16px;
-    font-family: "Roboto Regular";
-    font-weight: 400;
-    font-style: normal;
+        font-size: 16px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
 
-    line-height: 2;
+        line-height: 2;
 
-    color: white;
-}
+        color: white;
+    }
 
-.device-menu__delete-box {
-    position: relative;
+    .device-menu__delete-box {
+        position: relative;
 
-    width: 10%;
-    height: 100%;
-}
+        width: 20%;
+        height: 100%;
+    }
 
-.device-menu__delete {
-    position: relative;
-    
-    width: 46px;
-    height: 46px;
-
-    margin-top: 12px;
-    margin-left: auto;
-    margin-right: 10px;
-}
+    .device-menu__delete {
+        position: relative;
+        
+        width: 46px;
+        height: 46px;
 
-.device-menu__delete:hover {
-    cursor: pointer;
-}
+        margin-top: 12px;
+        margin-left: auto;
+        margin-right: 10px;
+    }
 
-.delete-line__first {
-    position: relative;
+    .device-menu__delete:hover {
+        cursor: pointer;
+    }
 
-    width: 100%;
-    height: 6px;
+    .delete-line__first {
+        position: relative;
 
-    transform: rotate(45deg);
+        width: 100%;
+        height: 6px;
 
-    top: 20px;
-    
-    background-color: white;
-}
+        transform: rotate(45deg);
 
-.delete-line__second {
-    position: relative;
+        top: 20px;
+        
+        background-color: white;
+    }
 
-    width: 100%;
-    height: 6px;
+    .delete-line__second {
+        position: relative;
 
-    transform: rotate(-45deg);
+        width: 100%;
+        height: 6px;
 
-    top: 20px;
+        transform: rotate(-45deg);
 
-    margin-top: -6px;
-    
-    background-color: white;
-}
+        top: 20px;
 
+        margin-top: -6px;
+        
+        background-color: white;
+    }
 
-.header {
-    position: relative;
 
-    width: 100%;
-    height: 765px;
+    .header {
+        position: relative;
 
-}
+        width: 100%;
+        height: 765px;
 
-.header__primary-menu {
-    position: relative;
+    }
 
-    width: 100%;
-    height: 45px;
+    .header__primary-menu {
+        position: relative;
 
-    background-color: #C8A35F;
-}
+        width: 100%;
+        height: 45px;
 
-.container {
-    position: relative;
+        background-color: #C8A35F;
+    }
 
-    width: 700px;
-    height: 100%;
+    .container {
+        position: relative;
 
-    margin-left: auto;
-    margin-right: auto;
-}
+        width: 300px;
+        height: 100%;
 
-.flex {
-    display: flex;
-}
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.primary-menu__list-languages {
-    position: relative;
+    .footer-container {}
 
-    height: 100%;
+    .flex {
+        display: flex;
+    }
 
-    list-style-type: none;
+    .primary-menu__list-languages {
+        position: relative;
 
-    display: flex;
-}
+        height: 100%;
 
-.russian-language {
-    position: relative;
+        list-style-type: none;
 
-    opacity: 1;
+        display: flex;
+    }
 
-    font-size: 12px;
-    font-family: "Roboto Regular";
-    font-weight: 400;
-    font-style: normal;
+    .russian-language {
+        position: relative;
 
-    margin-right: 5px;
-    margin-top: 16px;
-}
+        opacity: 1;
 
-.english-language {
-    position: relative;
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
 
-    opacity: .5;
+        margin-right: 5px;
+        margin-top: 16px;
+    }
 
-    font-size: 12px;
-    font-family: "Roboto Regular";
-    font-weight: 400;
-    font-style: normal;
+    .english-language {
+        position: relative;
 
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 16px;
-}
+        opacity: .5;
 
-.french-language {
-    position: relative;
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
 
-    opacity: .5;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 16px;
+    }
 
-    font-size: 12px;
-    font-family: "Roboto Regular";
-    font-weight: 400;
-    font-style: normal;
+    .french-language {
+        position: relative;
 
-    margin-left: 5px;
-    margin-top: 16px;
-}
+        opacity: .5;
 
-.button-languages {
-    position: relative;
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
 
-    background-color: rgba(0, 0, 0, 0);
+        margin-left: 5px;
+        margin-top: 16px;
+    }
 
-    border: none;
+    .button-languages {
+        position: relative;
 
-    color: white;
-}
+        background-color: rgba(0, 0, 0, 0);
 
-.primary-menu__phone {
-    position: relative;
+        border: none;
 
-    font-size: 12px;
-    font-family: "Roboto Regular";
-    font-weight: 400;
-    font-style: normal;
+        color: white;
+    }
 
-    margin-top: 16px;
-    margin-left: auto;
-    margin-right: auto;
+    .primary-menu__phone {
+        position: relative;
 
-    color: white;
-}
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
 
-.primary-menu__email {
-    position: relative;
+        margin-top: 16px;
+        margin-left: auto;
+        margin-right: auto;
 
-    font-size: 12px;
-    font-family: "Roboto Regular";
-    font-weight: 400;
-    font-style: normal;
+        color: white;
+    }
 
-    margin-top: 16px;
-    margin-left: auto;
+    .primary-menu__email {
+        position: relative;
 
-    color: white;
-}
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
 
-.secondary-menu {
-    position: relative;
+        margin-top: 16px;
+        margin-left: auto;
 
-    width: 100%;
-    height: 100px;
+        color: white;
+    }
 
-    background-color: #2F343A;
+    .secondary-menu {
+        position: relative;
 
-    margin-top: -1px;
-}
+        width: 100%;
+        height: 100px;
 
-.logotip-box {
-    position: relative;
+        background-color: #2F343A;
 
-    display: flex;
+        margin-top: -1px;
+    }
 
-    height: 46px;
+    .logotip-box {
+        position: relative;
 
-    margin-right: auto;
-    margin-top: 27px;
-}
+        display: flex;
 
-.logotip {
-    position: relative;
+        height: 46px;
 
-    display: block;
+        margin-right: auto;
+        margin-top: 27px;
+    }
 
-    width: 160px;
+    .logotip {
+        position: relative;
 
-    margin-right: 30px;
-}
+        display: block;
 
-.logotip-box__separator {
-    position: relative;
+        width: 100px;
 
-    width: 1px;
-    height: 100%;
+        margin-right: 30px;
+    }
 
-    background-color: white;
-}
+    .logotip-box__separator {
+        position: relative;
 
-.adress-box {
-    position: relative;
+        width: 1px;
+        height: 80%;
 
-    width: 100%;
-    height: 100%;
+        background-color: white;
 
-    display: flex;
+        margin-top: 5px;
+    }
 
-    margin-left: 30px;
-}
+    .adress-box {
+        position: relative;
 
-.location {
-    position: relative;
+        width: 100%;
+        height: 100%;
 
-    width: 25px;
-    height: 25px;
+        display: none;
 
-    margin-top: 10px;
-    margin-right: 5px;
-}
+        margin-left: 30px;
+    }
 
-.adress-box__text {
-    position: relative;
+    .location {
+        position: relative;
 
-    font-size: 14px;
-    font-family: "Roboto Regular";
-    font-weight: 400;
-    font-style: normal;
+        width: 20px;
+        height: 20px;
 
-    margin-top: 14px;
-    margin-left: 5px;
+        margin-top: 10px;
+        margin-right: 5px;
+    }
 
-    color: white;
-}
+    .adress-box__text {
+        position: relative;
 
-.navigation-menu {
-    position: relative;
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
 
-    height: 100%;
+        margin-top: 14px;
+        margin-left: 5px;
 
-    margin-left: auto;
-    margin-right: 0px;
+        color: white;
+    }
 
-    display: none;
-}
+    .navigation-menu {
+        position: relative;
 
-.navigation-menu__list {
-    position: relative;
+        height: 100%;
 
-    display: flex;
+        margin-left: auto;
+        margin-right: 0px;
 
-    list-style-type: none;
+        display: none;
+    }
 
-    margin-top: 42px;
-}
+    .navigation-menu__list {
+        position: relative;
 
-.list-element {
-    position: relative;
+        display: flex;
 
-    font-size: 14px;
-    font-family: "Roboto Regular";
-    font-weight: 400;
-    font-style: normal;
+        list-style-type: none;
 
-    margin-left: 15px;
-    margin-right: 15px;
-}
+        margin-top: 42px;
+    }
 
-.list-element:first-child {
-    margin-left: 0px;
-}
+    .list-element {
+        position: relative;
 
-.list-element:last-child {
-    margin-right: 0px;
-}
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
 
-.list-element a {
-    position: relative;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 
-    text-decoration: none;
+    .list-element:first-child {
+        margin-left: 0px;
+    }
 
-    color: white;
-}
+    .list-element:last-child {
+        margin-right: 0px;
+    }
 
-.device-menu__box {
-    position: relative;
+    .list-element a {
+        position: relative;
 
-    width: 46px;
-    height: 46px;
+        text-decoration: none;
 
-    margin-left: auto;
-    margin-right: 0px;
-    margin-top: 27px;
-}
+        color: white;
+    }
 
-.device-menu__box:hover {
-    cursor: pointer;
-}
+    .device-menu__box {
+        position: relative;
 
-.box-line {
-    position: relative;
+        width: 46px;
+        height: 46px;
 
-    width: 100%;
-    height: 6px;
+        margin-left: auto;
+        margin-right: 0px;
+        margin-top: 27px;
+    }
 
-    margin-top: 7px;
-    margin-bottom: 7px;
+    .device-menu__box:hover {
+        cursor: pointer;
+    }
 
-    background-color: white;
-}
+    .box-line {
+        position: relative;
 
-.main-screensaver {
-    position: relative;
+        width: 100%;
+        height: 6px;
 
-    width: 100%;
-    height: 620px;
+        margin-top: 7px;
+        margin-bottom: 7px;
 
-    background-image: url(./static/picture/header-background.svg);
-    background-position: center;
-    background-size: cover;
-}
+        background-color: white;
+    }
 
-.header-frame {
-    position: relative;
+    .main-screensaver {
+        position: relative;
 
-    width: 650px;
-    height: 245px;
+        width: 100%;
+        height: 620px;
 
-    border: 1px solid #C8A35F;
-    box-sizing: border-box;
+        background-image: url(./static/picture/header-background.svg);
+        background-position: center;
+        background-size: cover;
+    }
 
-    margin-left: auto;
-    margin-right: auto;
-    
-    top: 155px;
-}
+    .header-frame {
+        position: relative;
 
-.header-frame h1 {
-    position: relative;
+        width: 100%px;
 
-    font-size: 50px;
-    font-family: "Roboto Bold";
-    font-weight: 700;
-    font-style: normal;
+        border: 1px solid #C8A35F;
+        box-sizing: border-box;
 
-    text-align: center;
+        margin-left: auto;
+        margin-right: auto;
 
-    color: white;
+        padding-bottom: 50px;
+        
+        top: 90px;
+    }
 
-    margin-top: 45px;
-}
+    .header-frame h1 {
+        position: relative;
 
-.frame-subtitle {
-    position: relative;
+        font-size: 35px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
 
-    text-align: center;
+        text-align: center;
 
-    margin-top: 45px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
+        color: white;
 
-.frame-subtitle h5 {
-    position: relative;
+        margin-top: 45px;
+    }
 
-    display: block;
+    .frame-subtitle {
+        position: relative;
 
-    font-size: 14px;
-    font-family: "Roboto Regular";
-    font-weight: normal;
-    font-style: normal;
+        text-align: center;
 
-    color: white;
+        margin-top: 45px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
 
-    margin-left: 34px;
-    margin-right: 34px;
-}
+    .frame-subtitle h5 {
+        position: relative;
 
-.mouse-link {
-    position: relative;
+        display: block;
 
-    width: 100%;
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: normal;
+        font-style: normal;
 
-    top: 285px;
-}
+        color: white;
 
-.mouse-link button {
-    position: relative;
+        margin-left: 34px;
+        margin-right: 34px;
+    }
 
-    display: block;
+    .mouse-link {
+        position: relative;
 
-    margin-left: auto;
-    margin-right: auto;
+        width: 100%;
 
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-}
+        top: 185px;
+    }
 
-.mouse-link button:hover {
-    cursor: pointer;
-}
+    .mouse-link button {
+        position: relative;
 
-.section {
-    position: relative;
+        display: block;
 
-    width: 100%;
-}
+        margin-left: auto;
+        margin-right: auto;
 
-.services {
-    position: relative;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+    }
 
-    width: 100%;
-    height: 400px;
+    .mouse-link button:hover {
+        cursor: pointer;
+    }
 
-    background-color: #393F47;
+    .section {
+        position: relative;
 
-    margin-top: -1px;
-}
+        width: 100%;
+    }
 
-.services__background-block {
-    position: absolute;
+    .services {
+        position: relative;
 
-    width: 410px;
-    height: 100%;
+        width: 100%;
+        height: 550px;
 
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
+        background-color: #393F47;
 
-    background-color: #2F343A;
-}
+        margin-top: -1px;
 
-.services-slider {
-    position: relative;
+        overflow: hidden;
+    }
 
-    width: 100%;
-    height: 312px;
+    .services__background-block {
+        position: absolute;
 
-    top: 60px;
+        width: 410px;
+        height: 100%;
 
-    display: flex;
-}
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
 
-.slide {
-    position: relative;
+        background-color: #2F343A;
 
-    display: flex;
+        display: none;
+    }
 
-    width: 83%;
-    height: 100%;
-}
+    .services-slider {
+        position: relative;
 
-.slide__left-part {}
+        width: 100%;
+        height: 312px;
 
-.strip {
-    position: relative;
+        top: 60px;
+    }
 
-    width: 60px;
-    height: 3px;
+    .slide {
+        position: relative;
 
-    background-color: #C8A35F;
-}
+        display: flex;
 
-.slide-title {
-    position: relative;
+        width: 83%;
+        height: 100%;
+    }
 
-    width: 100%;
+    .slide__left-part {}
 
-    margin-top: 50px;
-}
+    .strip {
+        position: relative;
 
-.slide-title h2 {
-    position: relative;
+        width: 60px;
+        height: 3px;
 
-    font-size: 26px;
-    font-family: "Roboto Bold";
-    font-weight: 700;
-    font-style: normal;
+        background-color: #C8A35F;
+    }
 
-    color: white;
-}
+    .slide-title {
+        position: relative;
 
-.slide-subtitle {
-    position: relative;
+        width: 100%;
 
-    width: 100%;
+        margin-top: 50px;
+    }
 
-    margin-top: 42px;
-}
+    .slide-title h2 {
+        position: relative;
 
-.slide-subtitle h1 {
-    position: relative;
+        font-size: 26px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
 
-    font-size: 16px;
-    font-family: "Roboto Regular";
-    font-weight: 400;
-    font-style: normal;
+        color: white;
+    }
 
-    color: white;
-}
+    .slide-subtitle {
+        position: relative;
 
-.slide-button {
-    position: relative;
+        width: 100%;
 
-    width: 100%;
+        margin-top: 42px;
+    }
 
-    margin-top: 41px;
-}
+    .slide-subtitle h1 {
+        position: relative;
 
-.slide-button button {
-    position: relative;
+        font-size: 16px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
 
-    width: 100%;
-    height: 55px;
+        color: white;
+    }
 
-    background-color: #C8A35F;
+    .slide-button {
+        position: relative;
 
-    border: none;
+        width: 100%;
 
-    font-size: 16px;
-    font-family: "Roboto Medium";
-    font-weight: 500;
-    font-style: normal;
+        margin-top: 41px;
+    }
 
-    color: white;
-}
+    .slide-button button {
+        position: relative;
 
-.slide__right-part img {
-    position: relative;
+        width: 100%;
+        height: 55px;
 
-    margin-top: 40px;
-    margin-left: -80px;
-}
+        background-color: #C8A35F;
 
-.slider__buttons-box {
-    position: relative;
+        border: none;
 
-    width: 20%;
+        font-size: 16px;
+        font-family: "Roboto Medium";
+        font-weight: 500;
+        font-style: normal;
 
-    margin-left: -50px;
-    
-}
+        color: white;
+    }
 
-.button-next {
-    position: relative;
+    .slide__right-part img {
+        position: relative;
 
-    display: flex;
+        margin-top: 40px;
+        margin-left: -50px;
+    }
 
-    width: 100%;
-    height: 24px;
+    .slider__buttons-box {
+        position: relative;
 
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-}
+        height: 75px;
 
-.button-next h1 {
-    position: relative;
+        margin-top: 50px;
+        
+    }
 
-    font-size: 16px;
-    font-family: "Roboto Medium";
-    font-weight: 500;
-    font-style: normal;
+    .button-next {
+        position: relative;
 
-    color: #C8A35F;
+        display: flex;
 
-    top: 2px;
-}
+        width: 50%;
+        height: 24px;
 
-.button-next img {
-    margin-left: auto;
-}
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+    }
 
-.button-back {
-    position: relative;
+    .button-next h1 {
+        position: relative;
 
-    display: flex;
+        font-size: 16px;
+        font-family: "Roboto Medium";
+        font-weight: 500;
+        font-style: normal;
 
-    width: 100%;
-    height: 24px;
+        color: #C8A35F;
 
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
+        top: 2px;
+    }
 
-    margin-top: 262px;
-}
+    .button-next img {
+        margin-left: auto;
+    }
 
-.button-back h1 {
-    position: relative;
+    .button-back {
+        position: relative;
 
-    font-size: 16px;
-    font-family: "Roboto Medium";
-    font-weight: 500;
-    font-style: normal;
+        display: flex;
 
-    color: #C8A35F;
+        width: 50%;
+        height: 24px;
 
-    top: 2px;
-}
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
 
-.button-back img {
-    margin-right: auto;
-}
+        margin-left: auto;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
 
-.all-services {
-    position: relative;
+    .button-back h1 {
+        position: relative;
 
-    width: 100%;
-    height: 684px;
+        font-size: 16px;
+        font-family: "Roboto Medium";
+        font-weight: 500;
+        font-style: normal;
 
-    background-color: #2F343A;
-}
+        color: #C8A35F;
 
-.all-services__box {
-    position: relative;
+        top: 2px;
+    }
 
-    width: 100%;
-    height: 504px;
+    .button-back img {
+        margin-right: auto;
+    }
 
-    top: 120px;
-}
+    .all-services {
+        position: relative;
 
-.all-services__title {
-    position: relative;
+        width: 100%;
+        height: 2100px;
 
-    width: 100%;
+        background-color: #2F343A;
+    }
 
-    margin-top: 40px;
-}
+    .all-services__box {
+        position: relative;
 
-.all-services__title h2 {
-    font-size: 26px;
-    font-family: "Roboto Bold";
-    font-weight: 700;
-    font-style: normal;
+        width: 100%;
+        height: 504px;
 
-    color: white;
-}
+        top: 120px;
+    }
 
-.panel-block {
-    position: relative;
+    .all-services__title {
+        position: relative;
 
-    width: 100%;
+        width: 100%;
 
-    margin-top: 50px;
-}
+        margin-top: 40px;
+    }
 
-.panel__top-part {
-    position: relative;
+    .all-services__title h2 {
+        font-size: 26px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
 
-    width: 100%;
+        color: white;
+    }
 
-    display: flex;
-}
+    .panel-block {
+        position: relative;
 
-.panel__down-part {
-    position: relative;
+        width: 100%;
 
-    width: 100%;
+        margin-top: 50px;
+    }
 
-    display: flex;
+    .panel__top-part {
+        position: relative;
 
-    margin-top: 1px;
-}
+        width: 100%;
+    }
 
-.panel {
-    position: relative;
+    .panel__down-part {
+        position: relative;
 
-    width: 277px;
-    height: 180px;
+        width: 100%;
+    }
 
-    background-color: #393F47;
+    .panel {
+        position: relative;
 
-    margin-left: 1px;
-}
+        width: 100%;
+        height: 180px;
 
-.panel:first-child {
-    margin-left: 0px;
-}
+        background-color: #393F47;
 
-.panel-icon__box {
-    position: relative;
+        margin-left: 1px;
+    }
 
-    width: 50px;
-    height: 50px;
+    .panel:first-child {
+        margin-left: 0px;
+    }
 
-    border-radius: 100px;
-    background-color: rgba(0, 0, 0, 0.5);
+    .panel-icon__box {
+        position: relative;
 
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-}
+        width: 50px;
+        height: 50px;
 
-.panel-icon__box img {
-    position: relative;
+        top: 40px;
 
-    display: block;
+        border-radius: 100px;
+        background-color: #393F47;
 
-    width: 20px;
-    height: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+    }
 
-    margin-left: auto;
-    margin-right: auto;
+    .panel-icon__box img {
+        position: relative;
 
-    top: 16px;
-}
+        display: block;
 
-.panel h2 {
-    position: relative;
+        width: 20px;
+        height: 20px;
 
-    font-size: 14px;
-    font-family: "Roboto Bold";
-    font-weight: 700;
-    font-style: normal;
+        margin-left: auto;
+        margin-right: auto;
 
-    color: white;
+        top: 16px;
+    }
 
-    text-align: center;
+    .panel h2 {
+        position: relative;
 
-    margin-top: 30px;
-}
+        font-size: 14px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
 
-.about-company {
-    position: relative;
+        color: white;
 
-    width: 100%;
-    height: 500px;
+        text-align: center;
 
-    background-color: #2F343A;
-}
+        margin-top: 70px;
+    }
 
-.about-company__box {
-    position: relative;
+    .about-company {
+        position: relative;
 
-    width: 100%;
-    height: 382px;
+        width: 100%;
+        height: 1650px;
 
-    display: flex;
-}
+        background-color: #2F343A;
 
-.about-company__background-block {
-    position: absolute;
+        margin-top: -1px;
+    }
 
-    width: 410px;
-    height: 100%;
+    .about-company__box {
+        position: relative;
 
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
+        width: 100%;
+        height: 382px;
+    }
 
-    background-color: #393F47;
-}
+    .about-company__background-block {
+        position: absolute;
 
-.information__left-part {
-    position: relative;
+        width: 410px;
+        height: 100%;
 
-    width: 40%;
-    height: 100%;
-}
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
 
-.about-strip {
-    position: relative;
+        background-color: #393F47;
 
-    margin-top: 85px;
-}
+        display: none;
+    }
 
-.about-company__title {
-    position: relative;
+    .information__left-part {
+        position: relative;
 
-    margin-top: 20px;
+        width: 100%;
+        height: 80%;
+    }
 
-    color: white;
-}
+    .about-strip {
+        position: relative;
+    }
 
-.about-company__title h2 {
-    font-size: 26px;
-    font-family: "Roboto Bold";
-    font-weight: 700;
-    font-style: normal;
-} 
+    .about-company__title {
+        position: relative;
 
-.all-services__subtitle {
-    position: relative;
+        top: 40px;
 
-    margin-top: 20px;
+        color: white;
+    }
 
-    color: white;
-}
+    .about-company__title h2 {
+        font-size: 26px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+    } 
 
-.all-services__subtitle h6 {
-    font-size: 12px;
-    font-family: "Roboto Regular";
-    font-weight: 400;
-    font-style: normal;
-}
+    .all-services__subtitle {
+        position: relative;
 
-.information__right-part {
-    position: relative;
+        top: 70px;
 
-    width: 54%;
-    height: 100%;
+        color: white;
+    }
 
-    margin-left: auto;
-    margin-right: 0px;
-}
+    .all-services__subtitle h6 {
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+    }
 
-.data-panel {
-    position: relative;
+    .information__right-part {
+        position: relative;
 
-    width: 100%;
-    height: 320px;
+        width: 100%;
+        height: 100%;
 
-    margin-top: 85px;
-}
+        margin-left: auto;
+        margin-right: 0px;
+    }
 
-.data-panel__top-part {
-    position: relative;
+    .data-panel {
+        position: relative;
 
-    width: 100%;
+        width: 100%;
+        height: 320px;
+    }
 
-    display: flex;
-}
+    .data-panel__top-part {
+        position: relative;
 
-.offices {
-    position: relative;
+        width: 100%;
+    }
 
-    width: 127px;
-    
+    .offices {
+        position: relative;
 
-    background-color: white;
+        width: 100%;
+        height: 240px;
+        
+        background-color: white;
 
-    border: 1px solid #C8A35F;
-    border-right: none;
+        outline: 1px solid #C8A35F;
+    }
 
-    margin-top: -1px;
-}
+    .offices h1 {
+        position: relative;
 
-.offices h1 {
-    position: relative;
+        font-size: 64px;
+        font-family: "Roboto Bold";
+        font-weight: bold;
+        font-style: normal;
 
-    font-size: 26px;
-    font-family: "Roboto Bold";
-    font-weight: bold;
-    font-style: normal;
+        top: 40px;
 
-    margin-top: 15px;
+        text-align: center;
 
-    text-align: center;
+        color: #2F343A;
+    }
 
-    color: #2F343A;
-}
+    .offices h5 {
+        position: relative;
 
-.offices h5 {
-    position: relative;
+        font-size: 30px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
 
-    font-size: 14px;
-    font-family: "Roboto Regular";
-    font-weight: 400;
-    font-style: normal;
+        top: 40px;
 
-    margin-top: 4px;
+        text-align: center;
 
-    text-align: center;
+        color: black;
+    }
 
-    color: black;
-}
+    .offices h6 {
+        position: relative;
 
-.offices h6 {
-    position: relative;
+        font-size: 18px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
 
-    font-size: 12px;
-    font-family: "Roboto Regular";
-    font-weight: 400;
-    font-style: normal;
+        top: 55px;
 
-    margin-top: 4px;
+        text-align: center;
 
-    text-align: center;
+        color: black;
+    }
 
-    color: black;
-}
+    .trucks {
+        position: relative;
 
-.trucks {
-    position: relative;
+        width: 100%;
+        height: 240px;
+        
+        background-color: white;
 
-    width: 127px;
-    
+        outline: 1px solid #C8A35F;
+    }
 
-    background-color: white;
+    .trucks h1 {
+        position: relative;
 
-    border: 1px solid #C8A35F;
-    border-bottom: none;
+        font-size: 64px;
+        font-family: "Roboto Bold";
+        font-weight: bold;
+        font-style: normal;
 
-    margin-top: -1px;
-}
+        top: 40px;
 
-.trucks h1 {
-    position: relative;
+        text-align: center;
 
-    font-size: 26px;
-    font-family: "Roboto Bold";
-    font-weight: bold;
-    font-style: normal;
+        color: #2F343A;
+    }
 
-    margin-top: 15px;
+    .trucks h5 {
+        position: relative;
 
-    text-align: center;
+        font-size: 30px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
 
-    color: #2F343A;
-}
+        top: 40px;
 
-.trucks h5 {
-    position: relative;
+        text-align: center;
 
-    font-size: 14px;
-    font-family: "Roboto Regular";
-    font-weight: 400;
-    font-style: normal;
+        color: black;
+    }
 
-    margin-top: 4px;
+    .trucks h6 {
+        position: relative;
 
-    text-align: center;
+        font-size: 18px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
 
-    color: black;
-}
+        top: 55px;
 
-.trucks h6 {
-    position: relative;
+        text-align: center;
 
-    font-size: 12px;
-    font-family: "Roboto Regular";
-    font-weight: 400;
-    font-style: normal;
+        color: black;
+    }
 
-    margin-top: 4px;
+    .picture {
+        position: relative;
+    }
 
-    text-align: center;
+    .picture img {
+        width: 100%;
+    }
 
-    color: black;
-}
+    .top-picture {
+        margin-top: 1px;
+    }
 
-.picture {
-    position: relative;
-}
+    .down-picture {
+        margin-top: -3px;
+    }
 
-.picture img {
-    width: 127px;
+    .data-panel__down-part {
+        position: relative;
 
-    margin-top: -1px;
-}
+        width: 100%;
+    }
 
-.top-picture {
-    position: relative;
-}
+    .staff {
+        position: relative;
 
-.down-picture {}
+        width: 100%;
+        height: 240px;
 
-.data-panel__down-part {
-    position: relative;
+        margin-top: -4px;
 
-    width: 100%;
+        background-color: white;
+    }
 
-    display: flex;
+    .staff h1 {
+        position: relative;
 
-    margin-top: 1px;
-}
+        font-size: 64px;
+        font-family: "Roboto Bold";
+        font-weight: bold;
+        font-style: normal;
 
-.staff {
-    position: relative;
+        top: 40px;
 
-    width: 123px;
-    height: 98px;
+        text-align: center;
 
-    background-color: white;
+        color: #2F343A;
+    }
 
-    outline: 1px solid #C8A35F;
-}
+    .staff h5 {
+        position: relative;
 
-.staff h1 {
-    position: relative;
+        font-size: 30px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
 
-    font-size: 26px;
-    font-family: "Roboto Bold";
-    font-weight: bold;
-    font-style: normal;
+        top: 40px;
 
-    margin-top: 15px;
+        text-align: center;
 
-    text-align: center;
+        color: black;
+    }
 
-    color: #2F343A;
-}
+    .staff h6 {
+        position: relative;
 
-.staff h5 {
-    position: relative;
+        font-size: 18px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
 
-    font-size: 14px;
-    font-family: "Roboto Regular";
-    font-weight: 400;
-    font-style: normal;
+        top: 55px;
 
-    margin-top: 4px;
+        text-align: center;
 
-    text-align: center;
+        color: black;
+    }
 
-    color: black;
-}
+    #map {
+        height: 500px;
+    }
 
-.staff h6 {
-    position: relative;
+    .footer {
+        position: relative;
 
-    font-size: 12px;
-    font-family: "Roboto Regular";
-    font-weight: 400;
-    font-style: normal;
+        width: 100%;
+        height: 420px;
 
-    margin-top: 4px;
+        background-color: #C8A35F;
+    }
 
-    text-align: center;
+    .footer-logo {
+        position: relative;
 
-    color: black;
-}
+        width: 100%;
 
-#map {
-    height: 250px;
-}
+        top: 50px;
+    }
 
-.footer {
-    position: relative;
+    .footer-logo img {
+        position: relative;
 
-    width: 100%;
-    height: 160px;
+        display: block;
 
-    background-color: #C8A35F;
-}
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.footer-logo {
-    position: relative;
+    .footer-address {
+        position: relative;
 
-    height: 100%;
-}
+        top: 100px;
 
-.footer-logo img {
-    position: relative;
+        margin-left: auto;
+        margin-right: auto;
 
-    margin-top: 57px;
-}
+        text-align: center;
+    }
 
-.footer-address {
-    position: relative;
+    .address-building {
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
 
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 54px;
-}
+        color: #F2F2F2;
+    }
 
-.address-building {
-    font-size: 14px;
-    font-family: "Roboto Regular";
-    font-weight: 400;
-    font-style: normal;
+    .address-email {
+        position: relative;
 
-    color: #F2F2F2;
-}
+        top: 30px;
 
-.address-email {
-    font-size: 14px;
-    font-family: "Roboto Regular";
-    font-weight: 400;
-    font-style: normal;
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
 
-    color: #2F343A;
+        color: #2F343A;
+    }
 
-    margin-top: 10px;
-}
+    .footer-phone {
+        position: relative;
 
-.footer-phone {
-    position: relative;
+        top: 200px;
 
-    margin-left: auto;
-    margin-right: 0px;
-    margin-top: 54px;
-}
+        margin-left: auto;
+        margin-right: 0px;
+
+        text-align: center;
+    }
+
+    .phone-number__first {
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #F2F2F2;
+    }
+
+    .phone-number__second {
+        position: relative;
 
-.phone-number__first {
-    font-size: 14px;
-    font-family: "Roboto Regular";
-    font-weight: 400;
-    font-style: normal;
+        top: 30px;
 
-    color: #F2F2F2;
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #F2F2F2;
+
+        margin-top: 10px;
+    }
 }
+
+@media only screen and (min-width : 320px) and (max-width: 768px) {
+    .device-menu__shell {
+        position: absolute;
+
+        width: 100%;
+        height: 250px;
+
+        top: 60px;
+        left: 0px;
+
+        z-index: 5;
+
+        display: none;
+    }
+
+    .device-menu {
+        position: relative;
+
+        height: 100%;
+
+        display: flex;
+
+        margin-left: 15px;
+        margin-right: 15px;
+
+        background-color: #393F47;
+    }
+
+    .device-menu ul {
+        position: relative;
+
+        display: block;
+
+        width: 80%;
+
+        list-style-type: none;
+    }
+
+    .device-menu ul li {
+        position: relative;
+
+        width: 85%;
+        height: 30px;
+
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .device-menu ul li:hover {
+        background-color: #C8A35F;
+    }
+
+    .device-menu ul li a {
+        position: relative;
+
+        display: block;
+
+        width: 100%;
+        height: 100%;
+
+        text-decoration: none;
+
+        font-size: 16px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 2;
+
+        color: white;
+    }
+
+    .device-menu__delete-box {
+        position: relative;
+
+        width: 20%;
+        height: 100%;
+    }
+
+    .device-menu__delete {
+        position: relative;
+        
+        width: 46px;
+        height: 46px;
+
+        margin-top: 12px;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .device-menu__delete:hover {
+        cursor: pointer;
+    }
+
+    .delete-line__first {
+        position: relative;
+
+        width: 100%;
+        height: 6px;
+
+        transform: rotate(45deg);
+
+        top: 20px;
+        
+        background-color: white;
+    }
+
+    .delete-line__second {
+        position: relative;
+
+        width: 100%;
+        height: 6px;
+
+        transform: rotate(-45deg);
+
+        top: 20px;
+
+        margin-top: -6px;
+        
+        background-color: white;
+    }
+
+
+    .header {
+        position: relative;
+
+        width: 100%;
+        height: 765px;
+
+    }
+
+    .header__primary-menu {
+        position: relative;
+
+        width: 100%;
+        height: 45px;
+
+        background-color: #C8A35F;
+    }
+
+    .container {
+        position: relative;
+
+        width: 300px;
+        height: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-container {}
+
+    .flex {
+        display: flex;
+    }
+
+    .primary-menu__list-languages {
+        position: relative;
+
+        height: 100%;
+
+        list-style-type: none;
+
+        display: flex;
+    }
+
+    .russian-language {
+        position: relative;
+
+        opacity: 1;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-right: 5px;
+        margin-top: 16px;
+    }
+
+    .english-language {
+        position: relative;
+
+        opacity: .5;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 16px;
+    }
+
+    .french-language {
+        position: relative;
+
+        opacity: .5;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-left: 5px;
+        margin-top: 16px;
+    }
+
+    .button-languages {
+        position: relative;
+
+        background-color: rgba(0, 0, 0, 0);
+
+        border: none;
+
+        color: white;
+    }
+
+    .primary-menu__phone {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 16px;
+        margin-left: auto;
+        margin-right: auto;
+
+        color: white;
+    }
+
+    .primary-menu__email {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 16px;
+        margin-left: auto;
+
+        color: white;
+    }
+
+    .secondary-menu {
+        position: relative;
+
+        width: 100%;
+        height: 100px;
+
+        background-color: #2F343A;
+
+        margin-top: -1px;
+    }
+
+    .logotip-box {
+        position: relative;
+
+        display: flex;
+
+        height: 46px;
+
+        margin-right: auto;
+        margin-top: 27px;
+    }
+
+    .logotip {
+        position: relative;
+
+        display: block;
+
+        width: 100px;
+
+        margin-right: 30px;
+    }
+
+    .logotip-box__separator {
+        position: relative;
+
+        width: 1px;
+        height: 80%;
+
+        background-color: white;
+
+        margin-top: 5px;
+    }
+
+    .adress-box {
+        position: relative;
+
+        width: 100%;
+        height: 100%;
+
+        display: none;
+
+        margin-left: 30px;
+    }
+
+    .location {
+        position: relative;
+
+        width: 20px;
+        height: 20px;
+
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+
+    .adress-box__text {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 14px;
+        margin-left: 5px;
+
+        color: white;
+    }
+
+    .navigation-menu {
+        position: relative;
+
+        height: 100%;
+
+        margin-left: auto;
+        margin-right: 0px;
+
+        display: none;
+    }
+
+    .navigation-menu__list {
+        position: relative;
+
+        display: flex;
+
+        list-style-type: none;
+
+        margin-top: 42px;
+    }
+
+    .list-element {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .list-element:first-child {
+        margin-left: 0px;
+    }
+
+    .list-element:last-child {
+        margin-right: 0px;
+    }
+
+    .list-element a {
+        position: relative;
+
+        text-decoration: none;
+
+        color: white;
+    }
+
+    .device-menu__box {
+        position: relative;
+
+        width: 46px;
+        height: 46px;
+
+        margin-left: auto;
+        margin-right: 0px;
+        margin-top: 27px;
+    }
+
+    .device-menu__box:hover {
+        cursor: pointer;
+    }
+
+    .box-line {
+        position: relative;
+
+        width: 100%;
+        height: 6px;
+
+        margin-top: 7px;
+        margin-bottom: 7px;
+
+        background-color: white;
+    }
+
+    .main-screensaver {
+        position: relative;
 
-.phone-number__second {
-    font-size: 14px;
-    font-family: "Roboto Regular";
-    font-weight: 400;
-    font-style: normal;
+        width: 100%;
+        height: 620px;
 
-    color: #F2F2F2;
+        background-image: url(./static/picture/header-background.svg);
+        background-position: center;
+        background-size: cover;
+    }
 
-    margin-top: 10px;
-}}
+    .header-frame {
+        position: relative;
 
-@media only screen and (min-width : 321px) {}
+        width: 100%px;
+
+        border: 1px solid #C8A35F;
+        box-sizing: border-box;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        padding-bottom: 50px;
+        
+        top: 90px;
+    }
+
+    .header-frame h1 {
+        position: relative;
+
+        font-size: 35px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+
+        text-align: center;
+
+        color: white;
+
+        margin-top: 45px;
+    }
+
+    .frame-subtitle {
+        position: relative;
+
+        text-align: center;
+
+        margin-top: 45px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .frame-subtitle h5 {
+        position: relative;
+
+        display: block;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: normal;
+        font-style: normal;
+
+        color: white;
+
+        margin-left: 34px;
+        margin-right: 34px;
+    }
+
+    .mouse-link {
+        position: relative;
+
+        width: 100%;
+
+        top: 185px;
+    }
+
+    .mouse-link button {
+        position: relative;
+
+        display: block;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+    }
+
+    .mouse-link button:hover {
+        cursor: pointer;
+    }
+
+    .section {
+        position: relative;
+
+        width: 100%;
+    }
+
+    .services {
+        position: relative;
+
+        width: 100%;
+        height: 550px;
+
+        background-color: #393F47;
+
+        margin-top: -1px;
+
+        overflow: hidden;
+    }
+
+    .services__background-block {
+        position: absolute;
+
+        width: 410px;
+        height: 100%;
+
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+
+        background-color: #2F343A;
+
+        display: none;
+    }
+
+    .services-slider {
+        position: relative;
+
+        width: 100%;
+        height: 312px;
+
+        top: 60px;
+    }
+
+    .slide {
+        position: relative;
+
+        display: flex;
+
+        width: 83%;
+        height: 100%;
+    }
+
+    .slide__left-part {}
+
+    .strip {
+        position: relative;
+
+        width: 60px;
+        height: 3px;
+
+        background-color: #C8A35F;
+    }
+
+    .slide-title {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 50px;
+    }
+
+    .slide-title h2 {
+        position: relative;
+
+        font-size: 26px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+
+        color: white;
+    }
+
+    .slide-subtitle {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 42px;
+    }
+
+    .slide-subtitle h1 {
+        position: relative;
+
+        font-size: 16px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: white;
+    }
+
+    .slide-button {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 41px;
+    }
+
+    .slide-button button {
+        position: relative;
+
+        width: 100%;
+        height: 55px;
+
+        background-color: #C8A35F;
+
+        border: none;
+
+        font-size: 16px;
+        font-family: "Roboto Medium";
+        font-weight: 500;
+        font-style: normal;
+
+        color: white;
+    }
+
+    .slide__right-part img {
+        position: relative;
+
+        margin-top: 40px;
+        margin-left: -50px;
+    }
+
+    .slider__buttons-box {
+        position: relative;
+
+        height: 75px;
+
+        margin-top: 50px;
+        
+    }
+
+    .button-next {
+        position: relative;
+
+        display: flex;
+
+        width: 50%;
+        height: 24px;
+
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+    }
+
+    .button-next h1 {
+        position: relative;
+
+        font-size: 16px;
+        font-family: "Roboto Medium";
+        font-weight: 500;
+        font-style: normal;
+
+        color: #C8A35F;
+
+        top: 2px;
+    }
+
+    .button-next img {
+        margin-left: auto;
+    }
+
+    .button-back {
+        position: relative;
+
+        display: flex;
+
+        width: 50%;
+        height: 24px;
+
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+
+        margin-left: auto;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+
+    .button-back h1 {
+        position: relative;
+
+        font-size: 16px;
+        font-family: "Roboto Medium";
+        font-weight: 500;
+        font-style: normal;
+
+        color: #C8A35F;
+
+        top: 2px;
+    }
+
+    .button-back img {
+        margin-right: auto;
+    }
+
+    .all-services {
+        position: relative;
+
+        width: 100%;
+        height: 2100px;
+
+        background-color: #2F343A;
+    }
+
+    .all-services__box {
+        position: relative;
+
+        width: 100%;
+        height: 504px;
+
+        top: 120px;
+    }
+
+    .all-services__title {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 40px;
+    }
+
+    .all-services__title h2 {
+        font-size: 26px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+
+        color: white;
+    }
+
+    .panel-block {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 50px;
+    }
+
+    .panel__top-part {
+        position: relative;
+
+        width: 100%;
+    }
+
+    .panel__down-part {
+        position: relative;
+
+        width: 100%;
+    }
+
+    .panel {
+        position: relative;
+
+        width: 100%;
+        height: 180px;
+
+        background-color: #393F47;
+
+        margin-left: 1px;
+    }
+
+    .panel:first-child {
+        margin-left: 0px;
+    }
+
+    .panel-icon__box {
+        position: relative;
+
+        width: 50px;
+        height: 50px;
+
+        top: 40px;
+
+        border-radius: 100px;
+        background-color: #393F47;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+
+    .panel-icon__box img {
+        position: relative;
+
+        display: block;
+
+        width: 20px;
+        height: 20px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        top: 16px;
+    }
+
+    .panel h2 {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+
+        color: white;
+
+        text-align: center;
+
+        margin-top: 70px;
+    }
+
+    .about-company {
+        position: relative;
+
+        width: 100%;
+        height: 1650px;
+
+        background-color: #2F343A;
+
+        margin-top: -1px;
+    }
+
+    .about-company__box {
+        position: relative;
+
+        width: 100%;
+        height: 382px;
+    }
+
+    .about-company__background-block {
+        position: absolute;
+
+        width: 410px;
+        height: 100%;
+
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+
+        background-color: #393F47;
+
+        display: none;
+    }
+
+    .information__left-part {
+        position: relative;
+
+        width: 100%;
+        height: 80%;
+    }
+
+    .about-strip {
+        position: relative;
+    }
+
+    .about-company__title {
+        position: relative;
+
+        top: 40px;
+
+        color: white;
+    }
+
+    .about-company__title h2 {
+        font-size: 26px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+    } 
+
+    .all-services__subtitle {
+        position: relative;
+
+        top: 70px;
+
+        color: white;
+    }
+
+    .all-services__subtitle h6 {
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .information__right-part {
+        position: relative;
+
+        width: 100%;
+        height: 100%;
+
+        margin-left: auto;
+        margin-right: 0px;
+    }
+
+    .data-panel {
+        position: relative;
+
+        width: 100%;
+        height: 320px;
+    }
+
+    .data-panel__top-part {
+        position: relative;
+
+        width: 100%;
+    }
+
+    .offices {
+        position: relative;
+
+        width: 100%;
+        height: 240px;
+        
+        background-color: white;
+
+        outline: 1px solid #C8A35F;
+    }
+
+    .offices h1 {
+        position: relative;
+
+        font-size: 64px;
+        font-family: "Roboto Bold";
+        font-weight: bold;
+        font-style: normal;
+
+        top: 40px;
+
+        text-align: center;
+
+        color: #2F343A;
+    }
+
+    .offices h5 {
+        position: relative;
+
+        font-size: 30px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        top: 40px;
+
+        text-align: center;
+
+        color: black;
+    }
+
+    .offices h6 {
+        position: relative;
+
+        font-size: 18px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        top: 55px;
+
+        text-align: center;
+
+        color: black;
+    }
+
+    .trucks {
+        position: relative;
+
+        width: 100%;
+        height: 240px;
+        
+        background-color: white;
+
+        outline: 1px solid #C8A35F;
+    }
+
+    .trucks h1 {
+        position: relative;
+
+        font-size: 64px;
+        font-family: "Roboto Bold";
+        font-weight: bold;
+        font-style: normal;
+
+        top: 40px;
+
+        text-align: center;
+
+        color: #2F343A;
+    }
+
+    .trucks h5 {
+        position: relative;
+
+        font-size: 30px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        top: 40px;
+
+        text-align: center;
+
+        color: black;
+    }
+
+    .trucks h6 {
+        position: relative;
+
+        font-size: 18px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        top: 55px;
+
+        text-align: center;
+
+        color: black;
+    }
+
+    .picture {
+        position: relative;
+    }
+
+    .picture img {
+        width: 100%;
+    }
+
+    .top-picture {
+        margin-top: 1px;
+    }
+
+    .down-picture {
+        margin-top: -3px;
+    }
+
+    .data-panel__down-part {
+        position: relative;
+
+        width: 100%;
+    }
+
+    .staff {
+        position: relative;
+
+        width: 100%;
+        height: 240px;
+
+        margin-top: -4px;
+
+        background-color: white;
+    }
+
+    .staff h1 {
+        position: relative;
+
+        font-size: 64px;
+        font-family: "Roboto Bold";
+        font-weight: bold;
+        font-style: normal;
+
+        top: 40px;
+
+        text-align: center;
+
+        color: #2F343A;
+    }
+
+    .staff h5 {
+        position: relative;
+
+        font-size: 30px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        top: 40px;
+
+        text-align: center;
+
+        color: black;
+    }
+
+    .staff h6 {
+        position: relative;
+
+        font-size: 18px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        top: 55px;
+
+        text-align: center;
+
+        color: black;
+    }
+
+    #map {
+        height: 500px;
+    }
+
+    .footer {
+        position: relative;
+
+        width: 100%;
+        height: 420px;
+
+        background-color: #C8A35F;
+    }
+
+    .footer-logo {
+        position: relative;
+
+        width: 100%;
+
+        top: 50px;
+    }
+
+    .footer-logo img {
+        position: relative;
+
+        display: block;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-address {
+        position: relative;
+
+        top: 100px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+    }
+
+    .address-building {
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #F2F2F2;
+    }
+
+    .address-email {
+        position: relative;
+
+        top: 30px;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #2F343A;
+    }
+
+    .footer-phone {
+        position: relative;
+
+        top: 200px;
+
+        margin-left: auto;
+        margin-right: 0px;
+
+        text-align: center;
+    }
+
+    .phone-number__first {
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #F2F2F2;
+    }
+
+    .phone-number__second {
+        position: relative;
+
+        top: 30px;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #F2F2F2;
+
+        margin-top: 10px;
+    }
+}
 
 @media only screen and (max-width : 320px) {}
 
@@ -4808,7 +6018,1195 @@ body {
         position: absolute;
 
         width: 100%;
-        height: 200px;
+        height: 245px;
+
+        top: 60px;
+        left: 0px;
+
+        z-index: 5;
+
+        display: none;
+    }
+    
+    .device-menu {
+        position: relative;
+
+        height: 100%;
+
+        display: flex;
+
+        margin-left: 15px;
+        margin-right: 15px;
+
+        background-color: #393F47;
+    }
+
+    .device-menu ul {
+        position: relative;
+
+        display: block;
+
+        width: 90%;
+
+        list-style-type: none;
+    }
+
+    .device-menu ul li {
+        position: relative;
+
+        width: 95%;
+        height: 30px;
+
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .device-menu ul li:hover {
+        background-color: #C8A35F;
+    }
+
+    .device-menu ul li a {
+        position: relative;
+
+        display: block;
+
+        width: 100%;
+        height: 100%;
+
+        text-decoration: none;
+
+        font-size: 16px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 2;
+
+        color: white;
+    }
+
+    .device-menu__delete-box {
+        position: relative;
+
+        width: 10%;
+        height: 100%;
+    }
+
+    .device-menu__delete {
+        position: relative;
+        
+        width: 46px;
+        height: 46px;
+
+        margin-top: 12px;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .device-menu__delete:hover {
+        cursor: pointer;
+    }
+
+    .delete-line__first {
+        position: relative;
+
+        width: 100%;
+        height: 6px;
+
+        transform: rotate(45deg);
+
+        top: 20px;
+        
+        background-color: white;
+    }
+
+    .delete-line__second {
+        position: relative;
+
+        width: 100%;
+        height: 6px;
+
+        transform: rotate(-45deg);
+
+        top: 20px;
+
+        margin-top: -6px;
+        
+        background-color: white;
+    }
+    
+
+    .header {
+        position: relative;
+    
+        width: 100%;
+        height: 765px;
+    
+    }
+    
+    .header__primary-menu {
+        position: relative;
+    
+        width: 100%;
+        height: 45px;
+    
+        background-color: #C8A35F;
+    }
+
+    .container {
+        position: relative;
+
+        width: 700px;
+        height: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .primary-menu__list-languages {
+        position: relative;
+
+        height: 100%;
+
+        list-style-type: none;
+
+        display: flex;
+    }
+
+    .russian-language {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-right: 5px;
+        margin-top: 16px;
+    }
+
+    .english-language {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 16px;
+    }
+
+    .french-language {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-left: 5px;
+        margin-top: 16px;
+    }
+
+    .button-languages {
+        position: relative;
+
+        background-color: rgba(0, 0, 0, 0);
+
+        border: none;
+
+        color: white;
+    }
+    
+    .primary-menu__phone {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 16px;
+        margin-left: auto;
+        margin-right: auto;
+
+        color: white;
+    }
+
+    .primary-menu__email {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 16px;
+        margin-left: auto;
+
+        color: white;
+    }
+
+    .secondary-menu {
+        position: relative;
+
+        width: 100%;
+        height: 100px;
+
+        background-color: #2F343A;
+
+        margin-top: -1px;
+    }
+
+    .logotip-box {
+        position: relative;
+
+        display: flex;
+
+        height: 46px;
+
+        margin-right: auto;
+        margin-top: 27px;
+    }
+
+    .logotip {
+        position: relative;
+
+        display: block;
+
+        width: 160px;
+
+        margin-right: 30px;
+    }
+
+    .logotip-box__separator {
+        position: relative;
+
+        width: 1px;
+        height: 100%;
+
+        background-color: white;
+    }
+
+    .adress-box {
+        position: relative;
+
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+
+        margin-left: 30px;
+    }
+
+    .location {
+        position: relative;
+
+        width: 25px;
+        height: 25px;
+
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+
+    .adress-box__text {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 14px;
+        margin-left: 5px;
+
+        color: white;
+    }
+
+    .navigation-menu {
+        position: relative;
+
+        height: 100%;
+
+        margin-left: auto;
+        margin-right: 0px;
+
+        display: none;
+    }
+
+    .navigation-menu__list {
+        position: relative;
+
+        display: flex;
+
+        list-style-type: none;
+
+        margin-top: 42px;
+    }
+
+    .list-element {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .list-element:first-child {
+        margin-left: 0px;
+    }
+
+    .list-element:last-child {
+        margin-right: 0px;
+    }
+
+    .list-element a {
+        position: relative;
+
+        text-decoration: none;
+
+        color: white;
+    }
+
+    .device-menu__box {
+        position: relative;
+
+        width: 46px;
+        height: 46px;
+
+        margin-left: auto;
+        margin-right: 0px;
+        margin-top: 27px;
+    }
+
+    .device-menu__box:hover {
+        cursor: pointer;
+    }
+
+    .box-line {
+        position: relative;
+
+        width: 100%;
+        height: 6px;
+
+        margin-top: 7px;
+        margin-bottom: 7px;
+
+        background-color: white;
+    }
+
+    .main-screensaver {
+        position: relative;
+
+        width: 100%;
+        height: 620px;
+
+        background-image: url(./static/picture/header-background.svg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .header-frame {
+        position: relative;
+
+        width: 650px;
+        height: 245px;
+
+        border: 1px solid #C8A35F;
+        box-sizing: border-box;
+
+        margin-left: auto;
+        margin-right: auto;
+        
+        top: 155px;
+    }
+
+    .header-frame h1 {
+        position: relative;
+
+        font-size: 50px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+
+        text-align: center;
+
+        color: white;
+
+        margin-top: 45px;
+    }
+
+    .frame-subtitle {
+        position: relative;
+
+        text-align: center;
+
+        margin-top: 45px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .frame-subtitle h5 {
+        position: relative;
+
+        display: block;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: normal;
+        font-style: normal;
+
+        color: white;
+
+        margin-left: 34px;
+        margin-right: 34px;
+    }
+
+    .mouse-link {
+        position: relative;
+
+        width: 100%;
+
+        top: 285px;
+    }
+
+    .mouse-link button {
+        position: relative;
+
+        display: block;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+    }
+
+    .mouse-link button:hover {
+        cursor: pointer;
+    }
+
+    .section {
+        position: relative;
+
+        width: 100%;
+    }
+
+    .services {
+        position: relative;
+
+        width: 100%;
+        height: 400px;
+
+        background-color: #393F47;
+
+        margin-top: -1px;
+    }
+
+    .services__background-block {
+        position: absolute;
+
+        width: 410px;
+        height: 100%;
+
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+
+        background-color: #2F343A;
+    }
+
+    .services-slider {
+        position: relative;
+
+        width: 100%;
+        height: 312px;
+
+        top: 60px;
+
+        display: flex;
+    }
+
+    .slide {
+        position: relative;
+
+        display: flex;
+
+        width: 83%;
+        height: 100%;
+    }
+
+    .slide__left-part {}
+
+    .strip {
+        position: relative;
+
+        width: 60px;
+        height: 3px;
+
+        background-color: #C8A35F;
+    }
+
+    .slide-title {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 50px;
+    }
+
+    .slide-title h2 {
+        position: relative;
+
+        font-size: 26px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+
+        color: white;
+    }
+
+    .slide-subtitle {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 42px;
+    }
+
+    .slide-subtitle h1 {
+        position: relative;
+
+        font-size: 16px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: white;
+    }
+
+    .slide-button {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 41px;
+    }
+
+    .slide-button button {
+        position: relative;
+
+        width: 100%;
+        height: 55px;
+
+        background-color: #C8A35F;
+
+        border: none;
+
+        font-size: 16px;
+        font-family: "Roboto Medium";
+        font-weight: 500;
+        font-style: normal;
+
+        color: white;
+    }
+
+    .slide__right-part img {
+        position: relative;
+
+        margin-top: 40px;
+        margin-left: -80px;
+    }
+
+    .slider__buttons-box {
+        position: relative;
+
+        width: 20%;
+
+        margin-left: -50px;
+        
+    }
+
+    .button-next {
+        position: relative;
+
+        display: flex;
+
+        width: 100%;
+        height: 24px;
+
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+    }
+
+    .button-next h1 {
+        position: relative;
+
+        font-size: 16px;
+        font-family: "Roboto Medium";
+        font-weight: 500;
+        font-style: normal;
+
+        color: #C8A35F;
+
+        top: 2px;
+    }
+
+    .button-next img {
+        margin-left: auto;
+    }
+
+    .button-back {
+        position: relative;
+
+        display: flex;
+
+        width: 100%;
+        height: 24px;
+
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+
+        margin-top: 262px;
+    }
+
+    .button-back h1 {
+        position: relative;
+
+        font-size: 16px;
+        font-family: "Roboto Medium";
+        font-weight: 500;
+        font-style: normal;
+
+        color: #C8A35F;
+
+        top: 2px;
+    }
+
+    .button-back img {
+        margin-right: auto;
+    }
+
+    .all-services {
+        position: relative;
+
+        width: 100%;
+        height: 684px;
+
+        background-color: #2F343A;
+    }
+
+    .all-services__box {
+        position: relative;
+
+        width: 100%;
+        height: 504px;
+
+        top: 120px;
+    }
+
+    .all-services__title {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 40px;
+    }
+
+    .all-services__title h2 {
+        font-size: 26px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+
+        color: white;
+    }
+
+    .panel-block {
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 50px;
+    }
+
+    .panel__top-part {
+        position: relative;
+
+        width: 100%;
+
+        display: flex;
+    }
+
+    .panel__down-part {
+        position: relative;
+
+        width: 100%;
+
+        display: flex;
+
+        margin-top: 1px;
+    }
+
+    .panel {
+        position: relative;
+
+        width: 277px;
+        height: 180px;
+
+        background-color: #393F47;
+
+        margin-left: 1px;
+    }
+
+    .panel:first-child {
+        margin-left: 0px;
+    }
+
+    .panel-icon__box {
+        position: relative;
+
+        width: 50px;
+        height: 50px;
+
+        border-radius: 100px;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+
+    .panel-icon__box img {
+        position: relative;
+
+        display: block;
+
+        width: 20px;
+        height: 20px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        top: 16px;
+    }
+
+    .panel h2 {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+
+        color: white;
+
+        text-align: center;
+
+        margin-top: 30px;
+    }
+
+    .about-company {
+        position: relative;
+
+        width: 100%;
+        height: 500px;
+
+        background-color: #2F343A;
+    }
+
+    .about-company__box {
+        position: relative;
+
+        width: 100%;
+        height: 382px;
+
+        display: flex;
+    }
+
+    .about-company__background-block {
+        position: absolute;
+
+        width: 410px;
+        height: 100%;
+
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+
+        background-color: #393F47;
+    }
+
+    .information__left-part {
+        position: relative;
+
+        width: 40%;
+        height: 100%;
+    }
+
+    .about-strip {
+        position: relative;
+
+        margin-top: 85px;
+    }
+
+    .about-company__title {
+        position: relative;
+
+        margin-top: 20px;
+
+        color: white;
+    }
+
+    .about-company__title h2 {
+        font-size: 26px;
+        font-family: "Roboto Bold";
+        font-weight: 700;
+        font-style: normal;
+    } 
+
+    .all-services__subtitle {
+        position: relative;
+
+        margin-top: 20px;
+
+        color: white;
+    }
+
+    .all-services__subtitle h6 {
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .information__right-part {
+        position: relative;
+
+        width: 54%;
+        height: 100%;
+
+        margin-left: auto;
+        margin-right: 0px;
+    }
+
+    .data-panel {
+        position: relative;
+
+        width: 100%;
+        height: 320px;
+
+        margin-top: 85px;
+    }
+
+    .data-panel__top-part {
+        position: relative;
+
+        width: 100%;
+
+        display: flex;
+    }
+
+    .offices {
+        position: relative;
+
+        width: 127px;
+        
+
+        background-color: white;
+
+        border: 1px solid #C8A35F;
+        border-right: none;
+
+        margin-top: -1px;
+    }
+
+    .offices h1 {
+        position: relative;
+
+        font-size: 26px;
+        font-family: "Roboto Bold";
+        font-weight: bold;
+        font-style: normal;
+
+        margin-top: 15px;
+
+        text-align: center;
+
+        color: #2F343A;
+    }
+
+    .offices h5 {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 4px;
+
+        text-align: center;
+
+        color: black;
+    }
+
+    .offices h6 {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 4px;
+
+        text-align: center;
+
+        color: black;
+    }
+
+    .trucks {
+        position: relative;
+
+        width: 127px;
+        
+
+        background-color: white;
+
+        border: 1px solid #C8A35F;
+        border-bottom: none;
+
+        margin-top: -1px;
+    }
+
+    .trucks h1 {
+        position: relative;
+
+        font-size: 26px;
+        font-family: "Roboto Bold";
+        font-weight: bold;
+        font-style: normal;
+
+        margin-top: 15px;
+
+        text-align: center;
+
+        color: #2F343A;
+    }
+
+    .trucks h5 {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 4px;
+
+        text-align: center;
+
+        color: black;
+    }
+
+    .trucks h6 {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 4px;
+
+        text-align: center;
+
+        color: black;
+    }
+
+    .picture {
+        position: relative;
+    }
+
+    .picture img {
+        width: 127px;
+
+        margin-top: -1px;
+    }
+
+    .top-picture {
+        position: relative;
+    }
+
+    .down-picture {}
+
+    .data-panel__down-part {
+        position: relative;
+
+        width: 100%;
+
+        display: flex;
+
+        margin-top: 1px;
+    }
+
+    .staff {
+        position: relative;
+
+        width: 123px;
+        height: 98px;
+
+        background-color: white;
+
+        outline: 1px solid #C8A35F;
+    }
+
+    .staff h1 {
+        position: relative;
+
+        font-size: 26px;
+        font-family: "Roboto Bold";
+        font-weight: bold;
+        font-style: normal;
+
+        margin-top: 15px;
+
+        text-align: center;
+
+        color: #2F343A;
+    }
+
+    .staff h5 {
+        position: relative;
+
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 4px;
+
+        text-align: center;
+
+        color: black;
+    }
+
+    .staff h6 {
+        position: relative;
+
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 4px;
+
+        text-align: center;
+
+        color: black;
+    }
+
+    #map {
+        height: 250px;
+    }
+
+    .footer {
+        position: relative;
+
+        width: 100%;
+        height: 160px;
+
+        background-color: #C8A35F;
+    }
+
+    .footer-logo {
+        position: relative;
+
+        height: 100%;
+    }
+
+    .footer-logo img {
+        position: relative;
+
+        margin-top: 57px;
+    }
+
+    .footer-address {
+        position: relative;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 54px;
+    }
+
+    .address-building {
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #F2F2F2;
+    }
+
+    .address-email {
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #2F343A;
+
+        margin-top: 10px;
+    }
+
+    .footer-phone {
+        position: relative;
+
+        margin-left: auto;
+        margin-right: 0px;
+        margin-top: 54px;
+    }
+
+    .phone-number__first {
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #F2F2F2;
+    }
+
+    .phone-number__second {
+        font-size: 14px;
+        font-family: "Roboto Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #F2F2F2;
+
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1224px) {
+    .device-menu__shell {
+        position: absolute;
+
+        width: 100%;
+        height: 245px;
 
         top: 60px;
         left: 0px;
@@ -5998,6 +8396,10 @@ body {
 }
 
 @media only screen and (min-width : 1224px) {
+    .device-menu__shell {
+        display: none;
+    }
+
     .header {
         position: relative;
     
@@ -6346,7 +8748,7 @@ body {
 
         background-color: #393F47;
 
-        margin-top: -1px;
+        margin-top: -2px;
     }
 
     .services__background-block {
@@ -6536,6 +8938,8 @@ body {
         height: 684px;
 
         background-color: #2F343A;
+
+        margin-top: -1px;
     }
 
     .all-services__box {
@@ -6612,7 +9016,7 @@ body {
         height: 70px;
 
         border-radius: 100px;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: #393F47;
 
         margin-left: auto;
         margin-right: auto;
@@ -6652,6 +9056,8 @@ body {
         height: 662px;
 
         background-color: #2F343A;
+
+        margin-top: -1px;
     }
 
     .about-company__box {
@@ -6961,6 +9367,8 @@ body {
 
     #map {
         height: 450px;
+
+        margin-top: -1px;
     }
 
     .footer {
@@ -6971,7 +9379,7 @@ body {
 
         background-color: #C8A35F;
 
-        margin-top: 448px;
+        margin-top: 445px;
     }
 
     .footer-logo {
